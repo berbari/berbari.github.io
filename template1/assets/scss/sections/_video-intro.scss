@@ -1,0 +1,58 @@
+.video-intro{ text-align: center; width: 100%; clear: both; padding:20px 0; 
+   a {  
+        @include underlinenone;
+    }
+    h1{ line-height: 40px;  text-align: center; font-weight:700;
+     span{ display: block; font-weight: 400;}   
+        i{font-weight:300; font-style: normal; }
+    }
+    .video-play{ display: block; margin:27px auto; cursor: pointer;  color: $lightgray; position: relative;  width: 150px;     
+        .fa-circle-o-notch{font-size:90px;  border-radius: 50%; border: none; line-height: normal; 
+         
+        }
+        .fa-play { @include centerbox; font-size:30px; margin-left:4px}
+         &:hover{color: $primarycolor; }  
+    }
+    
+    ul{ width: 100%; clear: both; display: block; text-align: center;   font-size: 17px; margin: 0; padding: 22px 0; 
+        li{display: inline-block; padding: 0 30px;
+            a{ color:$basecolor; padding:0 0 11px;  display: block;  position: relative;  
+                 span{display:block; font-weight:bold;}
+                  &:after{ width:44px; height:3px; display: block; content: '';  position: absolute; left:50%; bottom: 0; background:$lightgray; margin-left: -22px; }  
+                i{ display:block; margin:10px auto; height:46px;  width:60px; color:$lightgray;  font-size:24px; line-height:46px; position: relative; overflow: hidden; 
+                    &:after{ border-radius:50%; border:2px solid $lightgray; position: absolute; left: 0; top: 0; height: 100%; width: 100%; display: block; content: ''; height:60px;}
+                }
+                &:hover{
+                     i{ color: $primarycolor;  
+                         &:after{border-color: $primarycolor; }
+                    } 
+                    &:after{ background: $primarycolor }
+                }  
+            }  
+       
+        }    
+    }  
+}   
+
+// extra 
+.blue{
+    .video-play{ color: blue;
+        &:hover{color: yellow; }  
+    }
+    ul{
+        li{
+        a{ 
+        &:after{ background:blue;} 
+     i{ color: blue;    
+         &:after{ border-color: blue;  }
+ }
+            &:hover{
+                &:after{ background:yellow;} 
+                i{color: yellow; border-color: yellow; 
+                  &:after{ border-color: yellow;  }
+                }
+            }
+    } 
+        }
+    }
+}

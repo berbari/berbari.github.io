@@ -1,0 +1,99 @@
+## project files ##
+database/alembic/versions/*
+!database/alembic/versions/.gitkeep.txt
+database/alembic_dev.ini
+__pycache__
+
+# files
+bot/files/user_files/*
+!bot/files/user_files/.gitkeep.txt
+bot/files/full_db_files/*
+!bot/files/full_db_files/.gitkeep.txt
+min_me_bots/genie_framework/README.txt
+script.sh
+
+# audio files
+*.mp3
+*.wav
+*.mp4
+
+# log
+bot/log_bot.txt
+fb_log.txt
+local_config.py
+
+
+#
+*.py[co]
+*.DS_*
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Mr Developer
+venv
+*.pyc
+
+
+
+
+#pycharm
+.idea/*
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
