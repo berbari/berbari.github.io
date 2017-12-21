@@ -1,0 +1,32 @@
+include bemto/bemto
+include helpers/variables-template1.pug
+include helpers/mixins.pug
+include components
+
+doctype html
+html(lang= "en")
+  block vars
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="content-language" content="en")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='author',content="")
+    title #{pageTitle ? pageTitle : ''}
+    meta(name='description', content='Test template')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0')
+    meta(http-equiv='x-dns-prefetch-control', content='on')
+    link(rel='dns-prefetch', href='//ajax.googleapis.com')
+    link(rel='dns-prefetch', href='//maps.googleapis.com/')
+    link(rel='dns-prefetch', href='//maps.gstatic.com/')
+    block head-css
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+      link(href="assets/css/foundation.css" rel="stylesheet")
+      link(href="assets/css/app.css" rel="stylesheet")
+      link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', rel='stylesheet')
+
+  body(class=(bodyClass ? bodyClass : ''))
+    block content
+
+    block footer-scripts
+      script(src='./assets/js/foundation.js' defer)
+      script(src='./assets/js/app.js' defer)

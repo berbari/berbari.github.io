@@ -1,0 +1,34 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "node ./server/www"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "browser-sync": "latest",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-csso": "latest",
+    "gulp-eslint": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-pug": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uncss": "latest",
+    "node-sass": "^4.7.2",
+    "rimraf": "latest"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

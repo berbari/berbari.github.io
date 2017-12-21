@@ -1,0 +1,25 @@
+
+// LIBS
+@import "lib/bootstrap";
+
+/* ------------ BASE ------------ */
+// BASE
+@import "base/variables";
+@import "base/typography";
+@import "base/animation";
+
+// HELPERS
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/animations";
+@import "helpers/icons-styles";
+
+
+// MODULES
+@import "modules/buttons";
+@import "modules/header";
+@import "modules/footer";
+
+
+// PAGES
+@import "pages/*";
