@@ -24,6 +24,15 @@
       font-weight: 400;
       padding: 0;
       & > li {
+        &:nth-last-of-type(1),
+        &:nth-last-of-type(2) {
+          display: none;
+        }
+        &:first-child {
+          a span {
+            border-left: 0;
+          }
+        }
         a {
           display: block;
           border-bottom: 7px solid transparent;
@@ -31,7 +40,7 @@
           padding: 46px 0 12px;
           span {
             padding: 5px 12px;
-            border-right: 1px dotted $gray;
+            border-left: 1px dotted $gray;
             @include respond-to(medium) {
               padding: 5px;
             }
@@ -54,13 +63,6 @@
             }
           }
         }
-        /*&.active {
-            a {
-                background: $menu-h;
-                border-color: $gray;
-                color: $primarycolor;
-            }
-        }*/
         @include respond-to(medium) {
           font-size: 12px;
           a {
@@ -69,6 +71,10 @@
         }
 
         @include respond-to(small) {
+          &:nth-last-of-type(1),
+          &:nth-last-of-type(2) {
+            display: block;
+          }
           border-bottom: 1px dotted $gray;
           width: 100%;
           clear: both;
