@@ -2,7 +2,7 @@
 
 module.exports = function () {
   $.gulp.task('copy:php', function () {
-    return $.gulp.src('./source/php/*.*')
+    return $.gulp.src('./source/templates/**/php/*.*')
     .pipe($.gulp.dest($.config.root));
   });
 };

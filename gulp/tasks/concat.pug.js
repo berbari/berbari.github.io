@@ -2,9 +2,8 @@
 
 module.exports = function() {
     $.gulp.task('concat:pug', function() {
-return $.gulp.src('./source/template/components/*.pug')
-    .pipe($.gp.concat('components.pug'))
-    .pipe($.gulp.dest('./source/template/'))
+return $.gulp.src('./source/templates/**/components/*.pug')
+    .pipe($.gulp.dest('./source/templates/globComponents'))
 
     });
 };

@@ -1,0 +1,48 @@
+body{
+  font-size:$basesize;
+  color:$basecolor;
+  background:$bodybg;
+  font-family: $basefont;
+  line-height: 1.42857;
+}
+
+
+h1,.h1,h2,.h2,h3,.h3, h4,.h4,h5,.h5,h6,.h6,p
+{padding-bottom:20px; margin: 0; font-weight: normal;  }
+
+
+h1  {
+  color:$headingcolor;
+  font-size:$heading1;
+  line-height:normal;
+  font-family:$basefont;
+  font-weight:700;
+  padding-bottom: 25px;
+
+
+}
+
+h2 {
+  font-size:$heading2;
+  color:$headingcolor;
+  font-family:$basefont;
+
+
+}
+
+h3 {
+  color:$headingcolor;
+  font-size:$heading3;
+  font-weight: normal;
+  font-family: $basefont;
+  margin-bottom:22px;
+
+
+}
+
+
+p { margin-bottom: 0; padding-bottom:20px; line-height: 24px;
+  &:empty {
+    display: none;
+  }
+}

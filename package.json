@@ -10,12 +10,13 @@
   "devDependencies": {
     "bower": "latest",
     "browser-sync": "latest",
+    "glob": "latest",
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
     "gulp-concat-css": "latest",
     "gulp-csso": "latest",
-    "gulp-eslint": "latest",
+    "gulp-if": "latest",
     "gulp-load-plugins": "latest",
     "gulp-notify": "latest",
     "gulp-pug": "latest",
@@ -25,8 +26,12 @@
     "gulp-svg-sprite": "latest",
     "gulp-uglify": "latest",
     "gulp-uncss": "latest",
+    "merge-stream": "^1.0.1",
+    "minimist": "latest",
     "node-sass": "^4.7.2",
-    "rimraf": "latest"
+    "path": "^0.12.7",
+    "rimraf": "latest",
+    "yargs": "^10.0.3"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7"

@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = [
-    './source/js/app.js',
-    './source/js/modules/*.js'
+    './source/templates/**/js/app.js',
+    './source/templates/**/js/modules/*.js'
 ];

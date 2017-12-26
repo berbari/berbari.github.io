@@ -1,0 +1,16 @@
+mixin header
+
+  +b.HEADER.header
+    +e.navbar
+      .container
+        +e.A.logo(href='index.html')
+          img(src=imgLink, alt='execyoution')
+        +e.BUTTON.navbar--toggle.navbar-toggle(type='button')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        +e.UL.navbar--nav.nav.navbar-nav.navbar-right
+          for link in links
+            li
+              a(href=link.href)
+                span #{link.text}
