@@ -3,14 +3,12 @@
     {
       "client": "Google",
       "template": "template1",
-      "inputFile": "instance_1.pug",
-      "outputFile": "123.html"
+      "inputFiles": ["instance_1.pug","instance_2.pug","instance_3.pug"]
     },
     {
       "client": "yahoo",
       "template": "template2",
-      "inputFile": "instance_1.pug",
-      "outputFile": "video1.html"
+      "inputFiles": ["instance_1.pug","instance_2.pug"]
     }
   ]
 }

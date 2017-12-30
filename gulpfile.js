@@ -20,21 +20,9 @@ let gulp = require('gulp'),
 
 argv.template = 'template1';
 jsonMap.forEach(function (tpl) {
-
-  // gulp.task(tpl + '-css:foundation', function () {
-  //   return gulp.src(config.srcDir + tpl + '/style/foundation/*.*')
-  //     .pipe(gp.concatCss('foundation.css', {rebaseUrls: false}))
-  //     .pipe(gp.csso())
-  //     .pipe(gulp.dest(config.root + tpl + '/assets/css'))
-  // });
-
-  // gulp.task(tpl + '-js:foundation', function () {
-  //   return gulp.src(config.srcDir + tpl + '/js/foundation/*.*')
-  //     .pipe(gp.concat('foundation.js',
-  //       {rebaseUrls: false}))
-  //     .pipe(gp.uglify())
-  //     .pipe(gulp.dest(config.root + tpl + '/assets/js'))
-  // });
+  let pugFiles = tpl.inputFiles.map(function (el) {
+    return config.srcDir + tpl.template + '/layout/instances/' + el
+  });
 
   gulp.task(tpl.template + '-copy:fonts', function () {
     return gulp.src(config.srcDir + tpl.template + '/images/**/*.*')
@@ -55,8 +43,7 @@ jsonMap.forEach(function (tpl) {
   });
 
   gulp.task(tpl.template + '-pug', function () {
-    return gulp.src(config.srcDir + tpl.template + '/layout/instances/' + tpl.inputFile)
-      .pipe(gp.rename(tpl.outputFile))
+    return gulp.src(pugFiles)
       .pipe(gp.pug(config.pugConfig))
       .on('error', gp.notify.onError(function (error) {
         return {
