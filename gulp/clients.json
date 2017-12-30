@@ -1,44 +1,16 @@
-{ "file" : "client_builds",
-  "clients":[
-  {
-    "name":"Google",
-    "builds":[
-      { "template":"Template1",
-        "pug_file":"inst1.pug",
-        "output_file":"video1.html"
-      },
-      { "client":"Template23",
-        "pug_file":"Anyname.pug",
-        "output_file":"video1.html" #same html name as above, but in a different directory that corresponds to template name
-      }
-    ]
-  },
-  {
-    "name":"Yahoo",
-    "builds":[
-      { "template":"Template1",
-        "pug_file":"inst1.pug",
-        "output_file":"video1.html"
-      },
-      { "template":"Template2",
-        "pug_file":"inst1.pug", #same pug name as above, but it doesn't matter because they are in different template folders
-        "output_file":"video1.html"
-      },
-      { "template":"Template8",
-        "pug_file":"inst2.pug",
-        "output_file":"hello.html"
-      },
-      { "client":"Template66",
-        "pug_file":"vvvvv.pug",
-        "output_file":"watch_me.html"
-      },
-      { "client":"Template66", #same template as above, but different pug file and output file
-        "pug_file":"12345.pug",
-        "output_file":"watch_me2.html"
-      }
-    ]
-  }
-
-]
-
+{
+  "templates": [
+    {
+      "client": "Google",
+      "template": "template1",
+      "inputFile": "instance_1.pug",
+      "outputFile": "123.html"
+    },
+    {
+      "client": "yahoo",
+      "template": "template2",
+      "inputFile": "instance_1.pug",
+      "outputFile": "video1.html"
+    }
+  ]
 }
