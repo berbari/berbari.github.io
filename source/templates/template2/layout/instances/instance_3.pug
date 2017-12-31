@@ -1,0 +1,48 @@
+extends ../_template
+
+//- pass vars to the layout
+block vars
+  - var bodyClass = 'index-page'
+  - var metaTitle = 'Client Template'
+  - var pageTitle = 'Client Template'
+  - var metaDescription = ''
+  - var metaKeywords = ''
+
+
+block content
+
+  section.body-video
+    video#bgvid(canplaythrough, autoplay, muted, loop poster="/img/index-vid-bg.png")
+      source(src=loopedVideoMp4, type='video/mp4')
+      source(src=loopedVideoWebm, type='video/webm')
+      source(src=loopedVideoOgv, type='video/ogv')
+  .wrapper
+    +header
+    main
+      section.popup-video
+        span#btn-close.btn-close CLOSE
+        .embed-responsive.embed-responsive-16by9(align='center')
+          .embed-responsive.embed-responsive-16by9
+            iframe#video.embed-responsive-item(allowfullscreen='1', title='YouTube video player', src=embeddedVideo+'?enablejsapi=1&version=3&playerapiid=ytplayer', width='800', height='450.5', frameborder='0')
+      section.video-intro
+        h1
+          | #{line1}
+          span #{line2}
+          <span> #{line3_word1} <i>#{line3_word2}</i></span>
+        span#video-play.video-play
+          i(class=(icon_class1 ? icon_class1 : ''))
+          i(class=(icon_class2 ? icon_class2 : ''))
+        .container.buttons-container
+          .page-button
+            a(href=web_url)
+              +use('telega')
+              span
+                span.hidden-xs connect on&nbsp;
+                | web
+          .page-button
+            a(href=messenger_url)
+              +use('fbm')
+              span
+                span.hidden-xs connect on&nbsp;
+                | Messenger
+    +footer

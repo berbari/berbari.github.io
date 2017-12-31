@@ -1,8 +1,14 @@
 {
   "templates": [
     {
+    "client": "Google",
+    "template": "template1",
+    "inputFiles": ["instance_2.pug","instance_3.pug"]
+  },
+
+    {
       "client": "Google",
-      "template": "template1",
+      "template": "template2",
       "inputFiles": ["instance_1.pug","instance_2.pug","instance_3.pug"]
     },
     {
