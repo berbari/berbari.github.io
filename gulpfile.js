@@ -135,7 +135,3 @@ gulp.task('default', gulp.series(
     })
   )
 ));
-
-gulp.task('test', function () {
-  console.log(fn);
-})

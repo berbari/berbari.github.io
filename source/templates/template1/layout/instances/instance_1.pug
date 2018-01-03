@@ -10,8 +10,9 @@ block vars
 
 
 block content
+  // INSTANCE VARIABLES
   - var imgLink = 'assets/img/logo.png';
-  - var loopedVideo = 'http://mipex.eu/sites/default/files/video/mipex_loop-1.mp4';
+  - var loopedVideo = 'https://s3.amazonaws.com/www.execyoution.com/assets/videos/How+To+Use+A+Foam+Roller.mp4';
   - var embeddedVideo = 'https://player.vimeo.com/video/166807261';
   - var line1 = 'HOW COUNTRIES';
   - var line2 = 'ARE PROMOTING';
@@ -49,6 +50,9 @@ block content
     }
     ];
 
+   // END OF INSTANCE VARIABLES
+
+
   section.body-video
     video#bgvid(canplaythrough, autoplay, muted, loop)
       source(src=loopedVideo, type='video/mp4')
@@ -59,7 +63,7 @@ block content
         span#btn-close.btn-close CLOSE
         .embed-responsive.embed-responsive-16by9(align='center')
           .embed-responsive.embed-responsive-16by9
-            iframe#video.embed-responsive-item(allowfullscreen='1', title='Video player', src=embeddedVideo+'?enablejsapi=1&version=3', frameborder='0')
+            iframe#video.embed-responsive-item(allowfullscreen='1', title='Video player', src=embeddedVideo+'?enablejsapi=1&version=3', width='800', height='450.5' frameborder='0')
       section.video-intro
         h1
           | #{line1}
