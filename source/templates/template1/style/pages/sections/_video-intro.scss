@@ -33,12 +33,11 @@
   color: $lightgray;
   position: relative;
   width: 150px;
-  .fa-circle-o-notch {
+  .fa {
     font-size: 90px;
     border-radius: 50%;
     border: none;
     line-height: normal;
-
   }
   .fa-play {
     @include centered;
@@ -49,6 +48,7 @@
     color: $primarycolor;
   }
 }
+
 .buttons-container {
   display: flex;
   justify-content: center;
