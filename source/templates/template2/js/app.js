@@ -19,14 +19,16 @@ $(document).ready(function () {
   $('.btn-close').click(function () {
     $('.popup-video').fadeOut();
   });
-
   $('#video-play').on('click', function(ev) {
     $("#video")[0].src += "&autoplay=1";
     ev.preventDefault();
   });
 
   $('#btn-close').on('click', function() {
-    $('#video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    $('#video').each(function(index) {
+      $(this).attr('src', $(this).attr('src').replace('&autoplay=1', ''));
+      return false;
+    });
   });
 
 });    

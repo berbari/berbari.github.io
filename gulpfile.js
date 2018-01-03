@@ -20,10 +20,17 @@ let gulp = require('gulp'),
 
 argv.template = 'template1';
 jsonMap.forEach(function (tpl) {
+  let jsF = require(config.srcDir + tpl.template + '/js/foundation/js.foundation.js');
   let pugFiles = tpl.inputFiles.map(function (el) {
     return config.srcDir + tpl.template + '/layout/instances/' + el
   });
-
+  gulp.task(tpl.template+tpl.client +'-js:foundation', function () {
+    return gulp.src(jsF)
+      .pipe(gp.concat('foundation.js',
+        {rebaseUrls: false}))
+      .pipe(gp.uglify())
+      .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template + '/assets/js'))
+  })
   gulp.task(tpl.template+tpl.client + '-copy:fonts', function () {
     return gulp.src(config.srcDir + tpl.template + '/images/**/*.*')
       .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template + '/assets/fonts'))
@@ -79,7 +86,7 @@ jsonMap.forEach(function (tpl) {
       .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template +'/assets/icons'))
   });
 
-  gulp.task(tpl.template +tpl.client+ '-build', gulp.parallel(tpl.template+tpl.client + '-copy:fonts', tpl.template+tpl.client + '-copy:image', tpl.template+tpl.client + '-js:process', tpl.template+tpl.client + '-pug', tpl.template+tpl.client + '-sass', tpl.template+tpl.client + '-svgSprite'));
+  gulp.task(tpl.template +tpl.client+ '-build', gulp.parallel(tpl.template+tpl.client +'-js:foundation', tpl.template+tpl.client + '-copy:fonts', tpl.template+tpl.client + '-copy:image', tpl.template+tpl.client + '-js:process', tpl.template+tpl.client + '-pug', tpl.template+tpl.client + '-sass', tpl.template+tpl.client + '-svgSprite'));
 });
 
 gulp.task('clean', function (cb) {
@@ -129,3 +136,6 @@ gulp.task('default', gulp.series(
   )
 ));
 
+gulp.task('test', function () {
+  console.log(fn);
+})
