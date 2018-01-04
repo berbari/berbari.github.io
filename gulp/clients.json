@@ -6,20 +6,6 @@
       "inputFiles": [
         "instance_1.pug"
       ]
-    },
-    {
-      "client": "Google",
-      "template": "template2",
-      "inputFiles": [
-        "instance_1.pug"
-      ]
-    },
-    {
-      "client": "yahoo",
-      "template": "template2",
-      "inputFiles": [
-        "instance_1.pug"
-      ]
     }
   ]
 }
