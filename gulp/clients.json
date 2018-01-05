@@ -4,6 +4,13 @@
       "client": "Google",
       "template": "template1",
       "inputFiles": [
+        "index2.pug", "index.pug"
+      ]
+    },
+    {
+      "client": "yahoo",
+      "template": "template1",
+      "inputFiles": [
         "instance_1.pug"
       ]
     }
