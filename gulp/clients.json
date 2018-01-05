@@ -4,19 +4,12 @@
       "client": "Google",
       "template": "template1",
       "inputFiles": [
-        "instance_1.pug"
-      ]
-    },
-    {
-      "client": "Google",
-      "template": "template2",
-      "inputFiles": [
-        "instance_1.pug"
+        "index2.pug", "index.pug"
       ]
     },
     {
       "client": "yahoo",
-      "template": "template2",
+      "template": "template1",
       "inputFiles": [
         "instance_1.pug"
       ]

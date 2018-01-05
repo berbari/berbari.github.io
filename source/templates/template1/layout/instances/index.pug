@@ -1,0 +1,84 @@
+extends ../_template
+
+//- pass vars to the layout
+block vars
+  - var bodyClass = 'index-page'
+  - var metaTitle = 'execYOUtion - better execution driven by you'
+  - var pageTitle = 'execYOUtion'
+  - var metaDescription = ''
+  - var metaKeywords = ''
+
+
+block content
+  // INSTANCE VARIABLES
+  - var imgLink = 'assets/img/eyt_logo.png';
+  - var loopedVideo = 'https://s3.amazonaws.com/pod.1min.me/videos/eyt_BG_01.mp4';
+  - var embeddedVideo = 'https://player.vimeo.com/video/146539955';
+  - var line1 = 'CONVERSATIONAL BOTS';
+  - var line2 = 'THAT DELIVER';
+  - var line3_word1 = 'customer';
+  - var line3_word2 = 'results';
+  - var icon_class1 = 'fa fa-circle-thin';
+  - var icon_class2 = 'fa fa-play';
+  - var web_url = '#!';
+  - var messenger_url = '#!';
+  -
+    var links = [
+    {
+    "href":"#!",
+    "text":"customers"
+    },
+    {
+    "href":"#!",
+    "text":"colleagues"
+    },
+    {
+    "href":"#!",
+    "text":"suppliers"
+    },
+    {
+    "href":"#!",
+    "text":"get started"
+    },
+    {
+    "href":"#!",
+    "text":"connect on web"
+    },
+    {
+    "href":"#!",
+    "text":"connect on messenger"
+    }
+    ];
+
+   // END OF INSTANCE VARIABLES
+
+
+  section.body-video
+    video#bgvid(canplaythrough, autoplay, muted, loop)
+      source(src=loopedVideo, type='video/mp4')
+  .wrapper
+    +header
+    main
+      section.popup-video
+        span#btn-close.btn-close CLOSE
+        iframe#video.embed-responsive-item(allowfullscreen='1', title='Video player', src=embeddedVideo+'?enablejsapi=1&version=3', frameborder='0')
+      section.video-intro
+        h1
+          | #{line1}
+          span #{line2}
+          <span> #{line3_word1} <i>#{line3_word2}</i></span>
+        span#video-play.video-play
+          i(class=(icon_class1 ? icon_class1 : ''))
+          i(class=(icon_class2 ? icon_class2 : ''))
+        .container.buttons-container
+          .page-button
+            a(href=web_url)
+              +use('telega')
+              span
+                span.hidden-xs CONNECT HERE
+          .page-button
+            a(href=messenger_url)
+              +use('fbm')
+              span
+                span.hidden-xs FB MESSENGER
+    +footer
