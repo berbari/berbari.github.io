@@ -1,5 +1,6 @@
 @import "sections/page-videos";
 @import "sections/video-intro";
+@import "sections/bootstrap-helper";
 
 /* main styles for page */
 main {
@@ -29,4 +30,14 @@ main {
       visibility: visible;
     }
   }
+}
+
+.faqHeader {
+  margin: 20px;
+  font-size: 27px;
+}
+
+.casual-list {
+  list-style: initial;
+  padding-left: 15px;
 }

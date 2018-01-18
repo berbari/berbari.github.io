@@ -3,11 +3,33 @@ mixin footer
   +b.FOOTER.footer
     section.copyright
       .container
-        aside.col-md-12.copyright-text
-          .textwidget Copyright © 2018 execYOUtion. All rights reserved.
+        aside.col-xs-12.col-md-6.copyright-text
+          a(href='' + copyright.url)
+            | #{copyright.text}
           .menu-copyright-links-container
             ul.menu-copyright-links.menu
               li
                 a(href='http://www.execyoution.com/privacy-policy/') Privacy Policy
               li
                 a(href='http://www.execyoution.com/terms-of-service/') Terms of Service
+        aside.col-xs-6.col-md-3
+          ul.contact-list
+            li.contact-list__item
+              a(href='tel:' + contacts.phone)
+                i.fa.fa-phone(aria-hidden='true')
+                | #{contacts.phone}
+            li.contact-list__item
+              a(href='mailto:' + contacts.email)
+                i.fa.fa-envelope(aria-hidden='true')
+                | #{contacts.email}
+        aside.col-xs-6.col-md-3.action
+          a(href='#!')
+            i.fa.fa-home
+          a(href='#!')
+            i.fa.fa-youtube-play
+          a(href='#!' id='expandable-btn')
+            i.fa.fa-globe
+    section(id="expandable").expandable
+      .content
+        b #{address.company}
+        p #{address.location}

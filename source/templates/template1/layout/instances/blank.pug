@@ -1,0 +1,60 @@
+extends ../_template
+
+//- pass vars to the layout
+block vars
+  - var bodyClass = 'index-page'
+  - var metaTitle = 'execYOUtion - better execution driven by you'
+  - var pageTitle = 'execYOUtion'
+  - var metaDescription = ''
+  - var metaKeywords = ''
+
+
+block content
+  // INSTANCE VARIABLES
+  - var imgLink = 'assets/img/eyt_logo_1200_233.png';
+  - var loopedVideo = 'https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4';
+  - var embeddedVideo = 'https://player.vimeo.com/video/146539955';
+  - var line1 = 'CONVERSATIONAL BOTS';
+  - var line2 = 'THAT DELIVER';
+  - var line3_word1 = 'customer';
+  - var line3_word2 = 'results';
+  - var icon_class1 = 'fa fa-circle-thin';
+  - var icon_class2 = 'fa fa-play';
+  - var web_url = '#!';
+  - var messenger_url = '#!';
+  -
+    var links = [
+    {
+    "href":"#!",
+    "text":"customers"
+    },
+    {
+    "href":"#!",
+    "text":"colleagues"
+    },
+    {
+    "href":"#!",
+    "text":"suppliers"
+    },
+    {
+    "href":"#!",
+    "text":"get started"
+    },
+    {
+    "href":"#!",
+    "text":"connect on web"
+    },
+    {
+    "href":"#!",
+    "text":"connect on messenger"
+    }
+    ];
+
+   // END OF INSTANCE VARIABLES
+
+
+  .wrapper
+    +header
+    main
+    
+    +footer

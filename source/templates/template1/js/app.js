@@ -31,4 +31,21 @@ $(document).ready(function () {
     });
   });
 
-});    
+  // expandable contacts block
+  document.getElementById('expandable-btn').addEventListener('click', function () {
+    if (document.getElementById('expandable').expanded) {
+      document.getElementById('expandable').classList.remove('expandable-expanded');
+      document.getElementById('expandable').expanded = false;
+
+      document.body.classList.remove('expandable-expanded-container');
+    } else {
+      document.getElementById('expandable').classList.add('expandable-expanded');
+      document.getElementById('expandable').expanded = true;
+
+      document.body.classList.add('expandable-expanded-container');
+
+      var totalScroll = (window.pageYOffset + 300) + 'px';
+      $('body, html').animate({scrollTop: totalScroll}, 2000);
+    }
+  })
+});
