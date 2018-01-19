@@ -21,9 +21,7 @@ let gulp = require('gulp'),
 
 jsonMap.forEach(function (tpl) {
   let jsF = require(config.srcDir + tpl.template + '/js/foundation/js.foundation.js');
-  let pugFiles = tpl.inputFiles.map(function (el) {
-    return config.srcDir + tpl.template + '/layout/instances/' + el
-  });
+
   gulp.task(tpl.template + tpl.client + '-js:foundation', function () {
     return gulp.src(jsF)
       .pipe(gp.concat('foundation.js',
@@ -49,17 +47,27 @@ jsonMap.forEach(function (tpl) {
       .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template + '/assets/js'))
   });
 
-  // Apply variables to pug templates
+  // Create path to inputFile
+  let pugFiles = tpl.inputFiles.map(function (el) {
+    return config.srcDir + tpl.template + '/layout/instances/' + el
+  });
+
   gulp.task(tpl.template + tpl.client + '-pug', function () {
-    return gulp.src(pugFiles)
-      .pipe(gp.pug({locals: tpl.data}/*config.pugConfig*/))
-      .on('error', gp.notify.onError(function (error) {
-        return {
-          title: 'Pug',
-          message: error.message
-        }
-      }))
-      .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template))
+    // Iterate list of paths
+    for (var i = 0; i < tpl.inputFiles.length; i++) {
+      gulp.src(pugFiles[i])
+      // add data to render a pug template
+        .pipe(gp.pug({locals: tpl.data[tpl.inputFiles[i]]} /*config.pugConfig*/))
+        .on('error', gp.notify.onError(function (error) {
+          return {
+            title: 'Pug',
+            message: error.message
+          }
+        }))
+        .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template));
+      }
+
+      return true;
   });
 
   gulp.task(tpl.template + tpl.client + '-sass', function () {
