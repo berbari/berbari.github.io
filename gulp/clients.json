@@ -7,7 +7,9 @@
         "index.pug", "faq.pug", "privacy-policy.pug"
       ],
       "data": {
-        "index.pug": {
+        "index.pug": [
+          {
+          "outputFilename": "video10000.html",
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",
@@ -70,6 +72,70 @@
             }
           ]
         },
+        {
+          "title": "execYOUtion",
+          "meta": {
+            "title": "execYOUtion - better execution driven by you",
+            "description":  "Google template description",
+            "keywords": "templates, generation, variables"
+          },
+          "contacts": {
+            "phone": "+16475298530",
+            "email": "info@execyoution.com"
+          },
+          "copyright": {
+            "text": "© 2018 execYOUtion. All rights reserved.",
+            "url": "http://www.execyoution.com"
+          },
+          "address": {
+            "company": "Javascript Ninjas",
+            "location": "Engeneering Sq."
+          },
+          "assets": {
+            "logo": "assets/img/eyt_logo_1200_233.png",
+            "backgroundVideo": "https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4",
+            "embedVideo": "https://player.vimeo.com/video/146539955"
+          },
+          "texts": {
+            "line1": "CONVERSATIONAL BOTS",
+            "line2": "THAT DELIVER",
+            "line3_word1": "customer",
+            "line3_word2": "results",
+            "icon_class1": "fa fa-circle-thin",
+            "icon_class2": "fa fa-play"
+          },
+          "links": {
+            "web_url": "#!",
+            "messenger_url": "#!"
+          },
+          "navlinks": [
+            {
+              "href":"#!",
+              "text":"customers"
+            },
+            {
+              "href":"#!",
+              "text":"colleagues"
+            },
+            {
+              "href":"#!",
+              "text":"suppliers"
+            },
+            {
+              "href":"#!",
+              "text":"get started"
+            },
+            {
+              "href":"#!",
+              "text":"connect on web"
+            },
+            {
+              "href":"#!",
+              "text":"connect on messenger"
+            }
+          ]
+        }
+      ],
         "faq.pug": {
           "title": "execYOUtion",
           "meta": {
@@ -94,7 +160,7 @@
           },
           "styles": {
             "alert_text_color": "#ffffff",
-            "alert_color": "#33ff33"
+            "alert_color": "##ff0000"
           },
           "links": {
             "web_url": "#!",

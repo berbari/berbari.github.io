@@ -1,0 +1,83 @@
+{
+  "client": "Google",
+  "template": "template1",
+  "templateFile": "privacy-policy.pug",
+  "outputFilename": "pp-anyoutputname.html",
+  "templateData": {
+    "title": "execYOUtion",
+    "meta": {
+      "title": "execYOUtion - better execution driven by you",
+      "description":  "Google template description",
+      "keywords": "templates, generation, variables"
+    },
+    "contacts": {
+      "phone": "+16475298530",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2018 execYOUtion. All rights reserved.",
+      "url": "http://www.execyoution.com"
+    },
+    "address": {
+      "company": "Javascript Ninjas",
+      "location": "Engeneering Sq."
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png"
+    },
+    "texts": {
+      "line1": "CONVERSATIONAL BOTS",
+      "line2": "THAT DELIVER",
+      "line3_word1": "customer",
+      "line3_word2": "results",
+      "icon_class1": "fa fa-circle-thin",
+      "icon_class2": "fa fa-play"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href":"#!",
+        "text":"customers"
+      },
+      {
+        "href":"#!",
+        "text":"colleagues"
+      },
+      {
+        "href":"#!",
+        "text":"suppliers"
+      },
+      {
+        "href":"#!",
+        "text":"get started"
+      },
+      {
+        "href":"#!",
+        "text":"connect on web"
+      },
+      {
+        "href":"#!",
+        "text":"connect on messenger"
+      }
+    ],
+    "lastUpdated": "January 22, 2018",
+    "information": "At Execyoution, we value your privacy and desire in knowing how information about you is collected and used. This privacy policy governs the manner in which Execyoution Inc. (“<b>Execyoution</b>” or “<b>we</b>“) collects, maintains, uses and discloses information collected from users (each, a “user”) of our websites and/or chatbots. This privacy policy applies to all sites (including execyoution.com and 1min.me) and all products and services offered at Execyoution.com, 1min.me and our 1min.me Facebook Messenger chatbot (our “sites” or “site“).",
+    "content": [
+      {
+        "title": "Block 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus vitae libero in auctor. Fusce cursus arcu et consequat fermentum. Cras quis viverra ipsum, quis hendrerit elit. Curabitur nec dolor cursus massa tincidunt ultrices eget et arcu. Sed maximus turpis a nisl facilisis lobortis. Quisque et erat ac est congue laoreet sit amet ac diam. Donec ornare cursus finibus. Aenean ex nibh, fermentum accumsan consectetur sit amet, scelerisque eu turpis. Cras gravida eros sit amet rutrum imperdiet. Suspendisse hendrerit pellentesque nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+      },
+      {
+        "title": "Block 2",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus vitae libero in auctor. Fusce cursus arcu et consequat fermentum. Cras quis viverra ipsum, quis hendrerit elit. Curabitur nec dolor cursus massa tincidunt ultrices eget et arcu. Sed maximus turpis a nisl facilisis lobortis. Quisque et erat ac est congue laoreet sit amet ac diam. Donec ornare cursus finibus. Aenean ex nibh, fermentum accumsan consectetur sit amet, scelerisque eu turpis. Cras gravida eros sit amet rutrum imperdiet. Suspendisse hendrerit pellentesque nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+      },
+      {
+        "title": "Block 3",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus vitae libero in auctor. Fusce cursus arcu et consequat fermentum. Cras quis viverra ipsum, quis hendrerit elit. Curabitur nec dolor cursus massa tincidunt ultrices eget et arcu. Sed maximus turpis a nisl facilisis lobortis. Quisque et erat ac est congue laoreet sit amet ac diam. Donec ornare cursus finibus. Aenean ex nibh, fermentum accumsan consectetur sit amet, scelerisque eu turpis. Cras gravida eros sit amet rutrum imperdiet. Suspendisse hendrerit pellentesque nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+      }
+    ]
+  }
+}

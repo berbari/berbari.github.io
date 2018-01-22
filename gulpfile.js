@@ -4,6 +4,8 @@ let gulp = require('gulp'),
   config = require('./gulp/config'),
   rimraf = require('rimraf'),
   browserSync = require('browser-sync'),
+  fs = require('fs'),
+  filenames = require("gulp-filenames"),
   gp = require('gulp-load-plugins')({
     recl: {
       'gulp-svg-sprite': 'svgSprite',
@@ -53,22 +55,42 @@ jsonMap.forEach(function (tpl) {
   });
 
   gulp.task(tpl.template + tpl.client + '-pug', function () {
-    // Iterate list of paths
-    for (var i = 0; i < tpl.inputFiles.length; i++) {
-      gulp.src(pugFiles[i])
-      // add data to render a pug template
-        .pipe(gp.pug({locals: tpl.data[tpl.inputFiles[i]]} /*config.pugConfig*/))
-        .on('error', gp.notify.onError(function (error) {
-          return {
-            title: 'Pug',
-            message: error.message
-          }
-        }))
-        .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template));
-      }
+    // check pre-build folder for template configuration files
+    gulp.src(config.templateDataDir + '*.json')
+      .pipe(
+        gp.data(function(file) {
+          // read instance configuration
+          let json = JSON.parse(fs.readFileSync(file.path));
 
-      return true;
+          gulp.src(config.srcDir + json.template + '/layout/instances/' + json.templateFile)
+              // add data to render a pug template
+            .pipe(
+              gp.pug(
+                {
+                  locals: json.templateData
+                }
+              )
+            )
+            .on('error', gp.notify.onError(function (error) {
+              return {
+                title: 'Pug',
+                message: error.message
+              }
+            }))
+            .pipe(gp.rename(json.outputFilename))
+            .pipe(
+              gulp.dest(config.root + json.client + '/' + json.template)
+            );
+
+          // return file to proceed flow
+          return file;
+        })
+      )
+      .pipe(gulp.dest('./temp'))
+
+    return true;
   });
+
 
   gulp.task(tpl.template + tpl.client + '-sass', function () {
     return gulp.src(config.srcDir + tpl.template + '/style/app.scss')
