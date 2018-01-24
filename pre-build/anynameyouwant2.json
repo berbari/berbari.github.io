@@ -2,7 +2,7 @@
   "client": "Google",
   "template": "template1",
   "templateFile": "faq.pug",
-  "outputFilename": "faq-anyoutputname.html",
+  "outputFilename": "faq-anotherwithdifferentdata.html",
   "templateData": {
     "title": "execYOUtion",
     "meta": {
@@ -26,8 +26,16 @@
       "logo": "assets/img/eyt_logo_1200_233.png"
     },
     "styles": {
-      "alert_text_color": "#ffffff",
-      "alert_color": "#EE2024"
+      "alert_text_color": "#ffff00",
+      "alert_color": "#20EE24"
+    },
+    "texts": {
+      "line1": "CONVERSATIONAL BOTS",
+      "line2": "THAT DELIVER",
+      "line3_word1": "customer",
+      "line3_word2": "results",
+      "icon_class1": "fa fa-circle-thin",
+      "icon_class2": "fa fa-play"
     },
     "links": {
       "web_url": "#!",
@@ -65,38 +73,16 @@
         "title": "Block 1",
         "items": [
           {
-            "title": "Item 1<b> Bold text</b>",
-            "content": "Items 1 content <b> Bold text</b>"
+            "title": "<b>Item 1</b>",
+            "content": "Items 1 content <ol><li>List item 1</li><li>List item 2</li></ol><h5>There is an image of pug</h5><hr><img src=\"http://cdn3-www.dogtime.com/assets/uploads/gallery/pug-dog-breed-pictures/3-sidesitting.jpg\"/>"
           },
           {
             "title": "Item 2",
-            "content": "Items 2 content <ol><li>List item 1</li><li>List item 2</li></ol><br/><img src=\"http://cdn3-www.dogtime.com/assets/uploads/gallery/pug-dog-breed-pictures/3-sidesitting.jpg\"/>"
+            "content": "Items 2 content"
           },
           {
             "title": "Item 3",
             "content": "Items 3 content"
-          }
-        ]
-      },
-      {
-        "title": "Block 2",
-        "items": [
-          {
-            "title": "Item 4",
-            "content": "Items 4 content"
-          },
-          {
-            "title": "Item 5",
-            "content": "Items 5 content"
-          }
-        ]
-      },
-      {
-        "title": "Block 3",
-        "items": [
-          {
-            "title": "Item 6",
-            "content": "Items 6 content"
           }
         ]
       }

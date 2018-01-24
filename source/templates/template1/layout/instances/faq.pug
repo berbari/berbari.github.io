@@ -14,18 +14,17 @@ block content
         button(type="button" data-dismiss="alert").close
           span(aria-hidden="true") &times;
           span.sr-only Close
-        | This section contains a wealth of information, related to <strong>PrepBootstrap</strong> and its store. If you cannot find an answer to your question,
-        | make sure to contact us.
+        | !{disclaimer}
       div(id="accordion").panel-group
         - var counter = 0;
         each block in content
-          .faqHeader #{block.title}
+          .faqHeader !{block.title}
           each item in block.items
             - counter++
             .panel.panel-default
               div(role="tab").panel-heading
                 h7.panel-title
-                  a(data-parent="#accordion" data-toggle="collapse" href="#collapse" + counter) #{item.title}
+                  a(data-parent="#accordion" data-toggle="collapse" href="#collapse" + counter) !{item.title}
               div(id="collapse" + counter).panel-collapse.collapse
                 div(role="tabpanel").panel-body
                   | !{item.content}

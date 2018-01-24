@@ -65,9 +65,9 @@ block content
         iframe#video.embed-responsive-item(allowfullscreen='1', title='Video player', src=assets.embedVideo+'?enablejsapi=1&version=3', frameborder='0')
       section.video-intro
         h1
-          | #{texts.line1}
-          span #{texts.line2}
-          <span> #{texts.line3_word1} <i>#{texts.line3_word2}</i></span>
+          | !{texts.line1}
+          span !{texts.line2}
+          <span> !{texts.line3_word1} <i>!{texts.line3_word2}</i></span>
         span#video-play.video-play
           i(class=(texts.icon_class1 ? texts.icon_class1 : ''))
           i(class=(texts.icon_class2 ? texts.icon_class2 : ''))

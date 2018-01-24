@@ -9,10 +9,10 @@ block content
     .container.privacy-policy
       h3 Privacy Policy
       p
-        b Last Updated: #{lastUpdated}
+        b Last Updated: !{lastUpdated}
       p !{information}
       each block in content
-        h4 #{block.title}
+        h4 !{block.title}
         p !{block.content}
 
     +footer
