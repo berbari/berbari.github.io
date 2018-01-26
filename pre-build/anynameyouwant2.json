@@ -19,6 +19,8 @@
       "url": "http://www.execyoution.com"
     },
     "address": {
+      "latitude": -25.363,
+      "longitude": 131.044,
       "company": "Javascript Ninjas",
       "location": "Engeneering Sq."
     },
@@ -27,7 +29,8 @@
     },
     "styles": {
       "alert_text_color": "#ffff00",
-      "alert_color": "#20EE24"
+      "alert_color": "#20EE24",
+      "alert_border_color": "#20aa24"
     },
     "texts": {
       "line1": "CONVERSATIONAL BOTS",

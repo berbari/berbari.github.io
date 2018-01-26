@@ -45,7 +45,26 @@ $(document).ready(function () {
       document.body.classList.add('expandable-expanded-container');
 
       var totalScroll = (window.pageYOffset + 300) + 'px';
-      $('body, html').animate({scrollTop: totalScroll}, 2000);
+      $('body, html').animate({scrollTop: totalScroll}, 1000);
     }
   })
 });
+
+// Google map code
+function initMap() {
+  var expendableGMap = document.getElementById('expandablegmap');
+
+  var mapLocation = {
+    lat: Number(expendableGMap.getAttribute("lat")),
+    lng: Number(expendableGMap.getAttribute("lng"))
+  };
+
+  var map = new google.maps.Map(expendableGMap, {
+    zoom: 4,
+    center: mapLocation
+  });
+  var marker = new google.maps.Marker({
+    position: mapLocation,
+    map: map
+  });
+}

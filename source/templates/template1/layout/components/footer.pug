@@ -5,24 +5,24 @@ mixin footer
       .container
         aside.col-xs-12.col-md-6.copyright-text
           a(href='' + copyright.url)
-            | #{copyright.text}
+            | !{copyright.text}
           .menu-copyright-links-container
             ul.menu-copyright-links.menu
               li
                 a(href='http://www.execyoution.com/privacy-policy/') Privacy Policy
               li
                 a(href='http://www.execyoution.com/terms-of-service/') Terms of Service
-        aside.col-xs-6.col-md-4
+        aside.col-xs-12.col-sm-6.col-md-4
           ul.contact-list
             li.contact-list__item
               a(href='tel:' + contacts.phone)
                 i.fa.fa-phone(aria-hidden='true')
-                | #{contacts.phone}
+                | !{contacts.phone}
             li.contact-list__item
               a(href='mailto:' + contacts.email)
                 i.fa.fa-envelope(aria-hidden='true')
-                | #{contacts.email}
-        aside.col-xs-6.col-md-2.action
+                | !{contacts.email}
+        aside.col-xs-12.col-sm-6.col-md-2.action
           a(href='#!')
             i.fa.fa-home
           a(href='#!')
@@ -30,6 +30,7 @@ mixin footer
           a(href='#!' id='expandable-btn')
             i.fa.fa-globe
     section(id="expandable").expandable
+      div(id="expandablegmap" lat=address.latitude lng=address.longitude).gmap
       .content
-        b #{address.company}
-        p #{address.location}
+        b !{address.company}
+        p !{address.location}
