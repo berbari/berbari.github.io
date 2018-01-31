@@ -30,7 +30,7 @@ mixin footer
           a(href='#!' id='expandable-btn')
             i.fa.fa-globe
     section(id="expandable").expandable
-      div(id="expandablegmap" lat=address.latitude lng=address.longitude).gmap
+      div(id="expandablegmap" lat=address.latitude lng=address.longitude zoom=address.zoom).gmap
       .content
         b !{address.company}
         p !{address.location}

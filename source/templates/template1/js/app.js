@@ -72,7 +72,7 @@ function initMap() {
   };
 
   window.GMap = new google.maps.Map(expendableGMap, {
-    zoom: 4,
+    zoom: Number(expendableGMap.getAttribute("zoom")),
     center: mapLocation
   });
   var marker = new google.maps.Marker({

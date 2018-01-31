@@ -20,8 +20,9 @@
       "url": "http://www.execyoution.com"
     },
     "address": {
-      "latitude": -25.363,
-      "longitude": 131.044,
+      "latitude": 43.653908,
+      "longitude": -79.384293,
+      "zoom": 16,
       "company": "Javascript Ninjas",
       "location": "Engeneering Sq."
     },
