@@ -1,0 +1,108 @@
+{
+  "client": "Google",
+  "template": "template1",
+  "templateFile": "faq.pug",
+  "outputFilename": "faq-anyoutputname.html",
+  "templateData": {
+    "title": "execYOUtion",
+    "meta": {
+      "title": "execYOUtion - better execution driven by you",
+      "description":  "Google template description",
+      "keywords": "templates, generation, variables"
+    },
+    "contacts": {
+      "phone": "+16475298530",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2018 execYOUtion. All rights reserved.",
+      "url": "http://www.execyoution.com"
+    },
+    "address": {
+      "latitude": -25.363,
+      "longitude": 131.044,
+      "company": "Javascript Ninjas",
+      "location": "Engeneering Sq."
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#ffffff",
+      "alert_color": "#EE2024",
+      "alert_border_color": "#aa2024"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href":"#!",
+        "text":"customers"
+      },
+      {
+        "href":"#!",
+        "text":"colleagues"
+      },
+      {
+        "href":"#!",
+        "text":"suppliers"
+      },
+      {
+        "href":"#!",
+        "text":"get started"
+      },
+      {
+        "href":"#!",
+        "text":"connect on web"
+      },
+      {
+        "href":"#!",
+        "text":"connect on messenger"
+      }
+    ],
+    "disclaimer": "This text will be inside alert box at the top of the page",
+    "content": [
+      {
+        "title": "Block 1",
+        "items": [
+          {
+            "title": "Item 1<b> Bold text</b>",
+            "content": "Items 1 content <b> Bold text</b>"
+          },
+          {
+            "title": "Item 2",
+            "content": "Items 2 content <ol><li>List item 1</li><li>List item 2</li></ol><br/><img src=\"http://cdn3-www.dogtime.com/assets/uploads/gallery/pug-dog-breed-pictures/3-sidesitting.jpg\"/>"
+          },
+          {
+            "title": "Item 3",
+            "content": "Items 3 content"
+          }
+        ]
+      },
+      {
+        "title": "Block 2",
+        "items": [
+          {
+            "title": "Item 4",
+            "content": "Items 4 content"
+          },
+          {
+            "title": "Item 5",
+            "content": "Items 5 content"
+          }
+        ]
+      },
+      {
+        "title": "Block 3",
+        "items": [
+          {
+            "title": "Item 6",
+            "content": "Items 6 content"
+          }
+        ]
+      }
+    ]
+  }
+}

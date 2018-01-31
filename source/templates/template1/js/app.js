@@ -33,6 +33,18 @@ $(document).ready(function () {
 
   // expandable contacts block
   document.getElementById('expandable-btn').addEventListener('click', function () {
+
+    if (!window.isMapInitialized) {
+      window.initMap();
+      window.isMapInitialized = true;
+    }
+
+    google.maps.event.trigger(window.GMap, 'resize');
+
+    setTimeout(function() {
+      google.maps.event.trigger(window.GMap, 'resize');
+    }, 500);
+
     if (document.getElementById('expandable').expanded) {
       document.getElementById('expandable').classList.remove('expandable-expanded');
       document.getElementById('expandable').expanded = false;
@@ -59,12 +71,12 @@ function initMap() {
     lng: Number(expendableGMap.getAttribute("lng"))
   };
 
-  var map = new google.maps.Map(expendableGMap, {
+  window.GMap = new google.maps.Map(expendableGMap, {
     zoom: 4,
     center: mapLocation
   });
   var marker = new google.maps.Marker({
     position: mapLocation,
-    map: map
+    map: window.GMap
   });
 }
