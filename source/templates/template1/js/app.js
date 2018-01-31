@@ -43,7 +43,8 @@ $(document).ready(function () {
 
     setTimeout(function() {
       google.maps.event.trigger(window.GMap, 'resize');
-    }, 500);
+      window.GMap.setCenter( window.marker.position);
+    }, 1000);
 
     if (document.getElementById('expandable').expanded) {
       document.getElementById('expandable').classList.remove('expandable-expanded');
@@ -75,7 +76,7 @@ function initMap() {
     zoom: Number(expendableGMap.getAttribute("zoom")),
     center: mapLocation
   });
-  var marker = new google.maps.Marker({
+  window.marker = new google.maps.Marker({
     position: mapLocation,
     map: window.GMap
   });
