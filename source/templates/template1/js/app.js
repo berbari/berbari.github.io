@@ -50,6 +50,10 @@ $(document).ready(function () {
       document.getElementById('expandable').classList.remove('expandable-expanded');
       document.getElementById('expandable').expanded = false;
 
+      if (document.getElementsByClassName('indexpage')[0]) {
+        document.getElementsByClassName('indexpage')[0].style.height = 'auto';
+      }
+
       document.body.classList.remove('expandable-expanded-container');
     } else {
       document.getElementById('expandable').classList.add('expandable-expanded');
@@ -57,7 +61,13 @@ $(document).ready(function () {
 
       document.body.classList.add('expandable-expanded-container');
 
+      // block flex ability
+      if (document.getElementsByClassName('indexpage')[0]) {
+        document.getElementsByClassName('indexpage')[0].style.height = document.getElementsByClassName('indexpage')[0].clientHeight + 'px';
+      }
+
       var totalScroll = (window.pageYOffset + 300) + 'px';
+      console.log(totalScroll);
       $('body, html').animate({scrollTop: totalScroll}, 1000);
     }
   })
