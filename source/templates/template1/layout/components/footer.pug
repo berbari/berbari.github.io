@@ -29,8 +29,9 @@ mixin footer
             i.fa.fa-youtube-play
           a(href='#!' id='expandable-btn')
             i.fa.fa-globe
-    section(id="expandable").expandable
-      div(id="expandablegmap" lat=address.latitude lng=address.longitude zoom=address.zoom).gmap
-      .content
-        b !{address.company}
-        p !{address.location}
+  div.lightbox
+  div.popup
+    div.info
+      b !{address.company}
+      p !{address.location}
+    div(lat=address.latitude lng=address.longitude zoom=address.zoom).gmap

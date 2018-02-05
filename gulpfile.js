@@ -125,13 +125,14 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', gulp.series(
-  'clean',
-  gulp.parallel(
-    jsonMap.map(function (tpl) {
-      return tpl.template + tpl.client + '-build';
-    })
+    'clean',
+    gulp.parallel(
+      jsonMap.map(function (tpl) {
+        return tpl.template + tpl.client + '-build';
+      })
+    )
   )
-));
+);
 
 gulp.task(argv.template + '-js:foundation', function () {
   return gulp.src(require(config.srcDir + argv.template + '/js/foundation/js.foundation.js'))

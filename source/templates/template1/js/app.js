@@ -31,51 +31,42 @@ $(document).ready(function () {
     });
   });
 
+  function toggleGMap() {
+    if (document.getElementsByClassName('lightbox')[0].visible) {
+      document.getElementsByClassName('lightbox')[0].classList.remove('lightbox-visible');
+      document.getElementsByClassName('popup')[0].classList.remove('popup-visible');
+
+      document.getElementsByClassName('lightbox')[0].visible = false;
+    } else {
+      document.getElementsByClassName('lightbox')[0].classList.add('lightbox-visible');
+      document.getElementsByClassName('popup')[0].classList.add('popup-visible');
+
+      document.getElementsByClassName('lightbox')[0].visible = true;
+    }
+  }
+
+  document.getElementsByClassName('lightbox')[0].addEventListener('click', function () {
+    toggleGMap();
+  });
+  document.getElementsByClassName('gmap')[0].addEventListener('click', function (e) {
+    e.preventDefault();
+  });
+
   // expandable contacts block
   document.getElementById('expandable-btn').addEventListener('click', function () {
+    toggleGMap();
 
     if (!window.isMapInitialized) {
       window.initMap();
       window.isMapInitialized = true;
-    }
-
-    google.maps.event.trigger(window.GMap, 'resize');
-
-    setTimeout(function() {
-      google.maps.event.trigger(window.GMap, 'resize');
       window.GMap.setCenter( window.marker.position);
-    }, 1000);
-
-    if (document.getElementById('expandable').expanded) {
-      document.getElementById('expandable').classList.remove('expandable-expanded');
-      document.getElementById('expandable').expanded = false;
-
-      if (document.getElementsByClassName('indexpage')[0]) {
-        document.getElementsByClassName('indexpage')[0].style.height = 'auto';
-      }
-
-      document.body.classList.remove('expandable-expanded-container');
-    } else {
-      document.getElementById('expandable').classList.add('expandable-expanded');
-      document.getElementById('expandable').expanded = true;
-
-      document.body.classList.add('expandable-expanded-container');
-
-      // block flex ability
-      if (document.getElementsByClassName('indexpage')[0]) {
-        document.getElementsByClassName('indexpage')[0].style.height = document.getElementsByClassName('indexpage')[0].clientHeight + 'px';
-      }
-
-      var totalScroll = (window.pageYOffset + 300) + 'px';
-      console.log(totalScroll);
-      $('body, html').animate({scrollTop: totalScroll}, 1000);
     }
-  })
+  });
 });
 
 // Google map code
 function initMap() {
-  var expendableGMap = document.getElementById('expandablegmap');
+  var expendableGMap = document.getElementsByClassName('gmap')[0];
 
   var mapLocation = {
     lat: Number(expendableGMap.getAttribute("lat")),
@@ -90,4 +81,15 @@ function initMap() {
     position: mapLocation,
     map: window.GMap
   });
+
+  var contentString = document.getElementsByClassName('info')[0].innerHTML;
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  window.marker.addListener('click', function() {
+    infowindow.open(window.GMap, window.marker);
+  });
+
+  infowindow.open(window.GMap, window.marker);
 }

@@ -95,43 +95,57 @@
   }
 }
 
-// expanded
-body {
-  transition: height 1s ease;
+.lightbox,
+.popup {
+  opacity: 0;
+  transition: all .5s ease;
 }
-.expandable {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  background-color: #fff;
 
-  transition: height 1s ease;
+.lightbox {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.popup {
+  position: fixed;
+  visibility: hidden;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 5px;
+
+  background-color: #EE2024;
+
+  @media screen and (max-width: 480px) {
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
 
   .gmap {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
-  }
-
-  .content {
-    position: absolute;
-
-    top: 20px;
-    left: calc(50% - 150px);
-
-    width: 300px;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: #EE2024;
-    color: #ffffff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.47);
-    z-index: 9999;
+  }
+
+  .info {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }
-.expandable-expanded {
-  height: 300px;
-  overflow: auto;
+
+.popup-visible,
+.lightbox-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease;
 }
-// .expandable-expanded-container {
-//  height: calc(100% + 300px);
-// }
