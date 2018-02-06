@@ -21,6 +21,9 @@ let gulp = require('gulp'),
 
   //
 
+  var defaultTasksList = [];
+  defaultTasksList.push('clean'); // always clean build directory
+
 jsonMap.forEach(function (tpl) {
   let jsF = require(config.srcDir + tpl.template + '/js/foundation/js.foundation.js');
 
@@ -56,7 +59,7 @@ jsonMap.forEach(function (tpl) {
 
   gulp.task(tpl.template + tpl.client + '-pug', function () {
     // check pre-build folder for template configuration files
-    gulp.src(config.templateDataDir + '*.json')
+    return gulp.src(config.templateDataDir + '*.json')
       .pipe(
         gp.data(function(file) {
           // read instance configuration
@@ -87,8 +90,6 @@ jsonMap.forEach(function (tpl) {
         })
       )
       .pipe(gulp.dest('./temp'))
-
-    return true;
   });
 
 
@@ -117,6 +118,8 @@ jsonMap.forEach(function (tpl) {
       .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template + '/assets/icons'))
   });
 
+  defaultTasksList.push(tpl.template + tpl.client + '-build');
+
   gulp.task(tpl.template + tpl.client + '-build', gulp.parallel(tpl.template + tpl.client + '-js:foundation', tpl.template + tpl.client + '-copy:fonts', tpl.template + tpl.client + '-copy:image', tpl.template + tpl.client + '-js:process', tpl.template + tpl.client + '-pug', tpl.template + tpl.client + '-sass', tpl.template + tpl.client + '-svgSprite'));
 });
 
@@ -125,12 +128,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', gulp.series(
-    'clean',
-    gulp.parallel(
-      jsonMap.map(function (tpl) {
-        return tpl.template + tpl.client + '-build';
-      })
-    )
+    defaultTasksList
   )
 );
 

@@ -12,7 +12,7 @@ block vars
 block content
 
   section.body-video
-    video#bgvid(canplaythrough, autoplay, muted, loop)
+    video#bgvid(playsinline, autoplay, muted, loop)
       source(src=assets.backgroundVideo, type='video/mp4')
   .wrapper
     +header
