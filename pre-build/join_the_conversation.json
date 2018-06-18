@@ -1,0 +1,114 @@
+{
+  "client": "EYT",
+  "template": "template1",
+  "templateFile": "faq.pug",
+  "outputFilename": "conversation.html",
+  "templateData": {
+    "title": "execYOUtion",
+    "meta": {
+      "title": "execYOUtion: better execution driven by YOU.",
+      "description": "Engage your stakeholders.",
+      "keywords": "chatbot, customers, customer, marketing, selling"
+    },
+    "contacts": {
+      "phone": "+16475298530",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2018 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.6473,
+      "longitude": -79.397,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#000000",
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1982976945061466",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "//chat.1min.me",
+        "text": "Connect on the web"
+      }
+    ],
+    "disclaimer": "How would you build more engaging relationships with <b>customers</b> and <b>colleagues</b>?<br><br>1-minute-me is a chat platform (chatbot) that helps you build conversations that deliver <b>measurable</b> results - both strategic and tactical. Here’s a (growing) list of things you can do on the platform:",
+    "content": [
+      {
+        "title": "Customers",
+        "items": [
+          {
+            "title": "Share <b>customer-relevant</b> content.",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Content format: text (messages) / image(s) / video(s)</li><li>Content: ideas for a new product/service, offers, interesting videos</li><li>1-minute-me will create one <b>monthly custom-produced video</b> for your business</ul>"
+          },
+          {
+            "title": "Solicit feedback from customers.",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Content format: text (messages) / image(s) / video(s)</li><li>Content: ideas for a new product/service, offers, interesting videos</li><li>1-minute-me will create one <b>monthly custom-produced video</b> for your business</ul>"
+          },
+          {
+            "title": "Manage product and service listings.",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Content format: text (messages) / image(s) / video(s)</li><li>Content: ideas for a new product/service, offers, interesting videos</li><li>1-minute-me will create one <b>monthly custom-produced video</b> for your business</ul>"
+          },
+          {
+            "title": "Process orders.",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Content format: text (messages) / image(s) / video(s)</li><li>Content: ideas for a new product/service, offers, interesting videos</li><li>1-minute-me will create one <b>monthly custom-produced video</b> for your business</ul>"
+          }
+        ]
+      },
+      {
+        "title": "Colleagues",
+        "items": [
+          {
+            "title": "Propose business targets",
+            "content": ""
+          },
+          {
+            "title": "Review products / services (provide suggestions)",
+            "content": ""
+          },
+          {
+            "title": "Refer friends",
+            "content": ""
+          },
+          {
+            "title": "Share ideas",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+}

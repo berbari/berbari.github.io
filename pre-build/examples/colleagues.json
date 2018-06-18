@@ -1,13 +1,13 @@
 {
-  "client": "Google",
+  "client": "EYT",
   "template": "template1",
   "templateFile": "faq.pug",
-  "outputFilename": "faq-anotherwithdifferentdata.html",
+  "outputFilename": "colleagues.html",
   "templateData": {
     "title": "execYOUtion",
     "meta": {
       "title": "execYOUtion - better execution driven by you",
-      "description":  "Google template description",
+      "description": "Google template description",
       "keywords": "templates, generation, variables"
     },
     "contacts": {
@@ -19,11 +19,11 @@
       "url": "http://www.execyoution.com"
     },
     "address": {
-      "latitude": 43.653908,
-      "longitude": -79.384293,
+      "latitude": 43.6473,
+      "longitude": -79.397,
       "zoom": 16,
-      "company": "Javascript Ninjas",
-      "location": "Engeneering Sq."
+      "company": "execYOUtion Inc.",
+      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
     },
     "assets": {
       "logo": "assets/img/eyt_logo_1200_233.png"
@@ -47,28 +47,28 @@
     },
     "navlinks": [
       {
-        "href":"#!",
-        "text":"customers"
+        "href": "faq1.html",
+        "text": "faq 1"
       },
       {
-        "href":"#!",
-        "text":"colleagues"
+        "href": "#!",
+        "text": "colleagues"
       },
       {
-        "href":"#!",
-        "text":"suppliers"
+        "href": "#!",
+        "text": "suppliers"
       },
       {
-        "href":"#!",
-        "text":"get started"
+        "href": "#!",
+        "text": "get started"
       },
       {
-        "href":"#!",
-        "text":"connect on web"
+        "href": "#!",
+        "text": "connect on web"
       },
       {
-        "href":"#!",
-        "text":"connect on messenger"
+        "href": "#!",
+        "text": "connect on messenger"
       }
     ],
     "disclaimer": "This text will be inside alert box at the top of the page",

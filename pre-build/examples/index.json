@@ -8,7 +8,7 @@
     "title": "exec.YOU.tion",
     "meta": {
       "title": "better execution. Driven by YOU.",
-      "description": "",
+      "description": "description",
       "keywords": "chatbot, leadership, skills"
     },
     "contacts": {
@@ -27,9 +27,9 @@
       "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
     },
     "assets": {
-      "logo": "assets/img/logo.png",
+      "logo": "assets/img/eyt_logo_1200_233.png",
       "backgroundVideo": "https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4",
-      "embedVideo": "https://www.youtube.com/watch?v=AfvNuJ0ZN5k"
+      "embedVideo": "https://player.vimeo.com/video/274246177"
     },
     "texts": {
       "line1": "Converational bots",
@@ -45,16 +45,28 @@
     },
     "navlinks": [
       {
-        "href": "//www.newelementtraining.com/blog/2017/8/15/goals-set-the-direction-but-the-journey-is-the-point",
-        "text": "Working with colleagues"
+        "href": "customers.html",
+        "text": "Customers"
       },
       {
-        "href": "//www.newelementtraining.com/research-details/",
-        "text": "Engaging Customers"
+        "href": "colleagues.html",
+        "text": "Colleagues"
       },
       {
-        "href": "/skills.html",
-        "text": "Chatbot Skills"
+        "href": "google.com",
+        "text": "Chatbot skills"
+      },
+      {
+        "href": "//google.com",
+        "text": "double slash google"
+      },
+      {
+        "href": "https://www.google.com",
+        "text": "full google url"
+      },
+      {
+        "href": "#!",
+        "text": "connect on messenger"
       }
     ]
   }

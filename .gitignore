@@ -34,6 +34,11 @@ Thumbs.db
 bower_components
 dist
 build
+build_old
+build_old2
+old-build
+old-builds
+old-pre-builds
 temp
 server\public\uploads
 

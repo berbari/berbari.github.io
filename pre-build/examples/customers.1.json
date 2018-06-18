@@ -1,14 +1,14 @@
 {
-  "client": "Google",
+  "client": "EYT",
   "template": "template1",
   "templateFile": "faq.pug",
-  "outputFilename": "faq-anyoutputname.html",
+  "outputFilename": "customers.html",
   "templateData": {
     "title": "execYOUtion",
     "meta": {
       "title": "execYOUtion - better execution driven by you",
-      "description":  "Google template description",
-      "keywords": "templates, generation, variables"
+      "description": "Engage your customers/",
+      "keywords": "chatbot, customers, customer, marketing, selling"
     },
     "contacts": {
       "phone": "+16475298530",
@@ -19,19 +19,19 @@
       "url": "http://www.execyoution.com"
     },
     "address": {
-      "latitude": 43.653908,
-      "longitude": -79.384293,
+      "latitude": 43.6473,
+      "longitude": -79.397,
       "zoom": 16,
-      "company": "Javascript Ninjas",
-      "location": "Engeneering Sq."
+      "company": "execYOUtion Inc.",
+      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
     },
     "assets": {
       "logo": "assets/img/eyt_logo_1200_233.png"
     },
     "styles": {
       "alert_text_color": "#ffffff",
-      "alert_color": "#EE2024",
-      "alert_border_color": "#aa2024"
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
     },
     "links": {
       "web_url": "#!",
@@ -39,31 +39,31 @@
     },
     "navlinks": [
       {
-        "href":"#!",
-        "text":"customers"
+        "href": "faq2.html",
+        "text": "Customers"
       },
       {
-        "href":"#!",
-        "text":"colleagues"
+        "href": "index1.html",
+        "text": "Colleagues"
       },
       {
-        "href":"#!",
-        "text":"suppliers"
+        "href": "google.com",
+        "text": "google dot com"
       },
       {
-        "href":"#!",
-        "text":"get started"
+        "href": "//google.com",
+        "text": "double slash google"
       },
       {
-        "href":"#!",
-        "text":"connect on web"
+        "href": "https://www.google.com",
+        "text": "full google url"
       },
       {
-        "href":"#!",
-        "text":"connect on messenger"
+        "href": "tel:+15555551212",
+        "text": "Call Us"
       }
     ],
-    "disclaimer": "This text will be inside alert box at the top of the page",
+    "disclaimer": "Most of us love chatting. What if we could use a chat platform as a way to execute better?. 1-min-me is a chatbot (chat platform) that lets you engage with customers and colleagues with the objective of delivering better results.",
     "content": [
       {
         "title": "Block 1",

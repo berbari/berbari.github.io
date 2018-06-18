@@ -7,8 +7,8 @@
     "outputFilename": "index.html",
     "title": "exec.YOU.tion",
     "meta": {
-      "title": "better execution. Driven by YOU.",
-      "description": "",
+      "title": "execYOUtion: better execution driven by YOU.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
       "keywords": "chatbot, leadership, skills"
     },
     "contacts": {
@@ -17,7 +17,9 @@
     },
     "copyright": {
       "text": "© 2018 execYOUtion.",
-      "url": "http://www.execyoution.com"
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
     },
     "address": {
       "latitude": 43.6473,
@@ -27,9 +29,9 @@
       "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
     },
     "assets": {
-      "logo": "assets/img/logo.png",
+      "logo": "assets/img/eyt_logo_1200_233.png",
       "backgroundVideo": "https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4",
-      "embedVideo": "https://www.youtube.com/watch?v=AfvNuJ0ZN5k"
+      "embedVideo": "https://player.vimeo.com/video/274246177"
     },
     "texts": {
       "line1": "Converational bots",
@@ -40,21 +42,33 @@
       "icon_class2": "fa fa-play"
     },
     "links": {
-      "web_url": "//demo.1min.me.s3-website-us-east-1.amazonaws.com/",
+      "web_url": "//chat.1min.me/",
       "messenger_url": "//messenger.com/t/1982976945061466"
     },
     "navlinks": [
       {
-        "href": "//www.newelementtraining.com/blog/2017/8/15/goals-set-the-direction-but-the-journey-is-the-point",
-        "text": "Working with colleagues"
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
       },
       {
-        "href": "//www.newelementtraining.com/research-details/",
-        "text": "Engaging Customers"
+        "href": "conversation.html",
+        "text": "Join The Conversation"
       },
       {
-        "href": "/skills.html",
+        "href": "skills.html",
         "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1982976945061466",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "//chat.1min.me",
+        "text": "Connect on the web"
       }
     ]
   }
