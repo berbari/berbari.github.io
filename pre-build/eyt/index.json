@@ -1,0 +1,75 @@
+{
+  "client": "EYT",
+  "template": "template1",
+  "templateFile": "index.pug",
+  "outputFilename": "index.html",
+  "templateData": {
+    "outputFilename": "index.html",
+    "title": "exec.YOU.tion",
+    "meta": {
+      "title": "execYOUtion: better execution driven by YOU.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
+      "keywords": "chatbot, leadership, skills"
+    },
+    "contacts": {
+      "phone": "+16475298530",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2019 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.7255,
+      "longitude": -79.4032,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "3080 Yonge St Suite 6060 <br>Toronto, ON, M4N 3N1"
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png",
+      "backgroundVideo": "https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4",
+      "embedVideo": "https://player.vimeo.com/video/274246177"
+    },
+    "texts": {
+      "line1": "Converational bots",
+      "line2": "that deliver",
+      "line3_word1": "business",
+      "line3_word2": "results.",
+      "icon_class1": "fa fa-circle-thin",
+      "icon_class2": "fa fa-play"
+    },
+    "links": {
+      "web_url": "/bot/",
+      "messenger_url": "//messenger.com/t/1min.me"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1min.me",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "/bot/",
+        "text": "Connect on the web"
+      }
+    ]
+  }
+}

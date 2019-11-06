@@ -1,0 +1,131 @@
+{
+  "client": "EYT",
+  "template": "1min_me",
+  "templateFile": "faq.pug",
+  "outputFilename": "skills.html",
+  "templateData": {
+    "title": "1-minute-me: business chatbot",
+    "meta": {
+      "title": "1min.me: chatbot for your business.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
+      "keywords": "chatbot, leadership, skills"
+    },
+    "contacts": {
+      "phone": "+16475298530",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2019 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.7255,
+      "longitude": -79.4032,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "3080 Yonge St Suite 6060 <br>Toronto, ON, M4N 3N1"
+    },
+    "assets": {
+      "logo": "assets/img/one_min_me_logo_1050_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#000000",
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1min.me",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "/bot/",
+        "text": "Connect on the web"
+      }
+    ],
+    "disclaimer": "This page will be constantly updated to feature the growing list of chatbot skills on the 1-minute-me chat platform.<br><br>To invoke any skill, just type (or say) the <b>utterance</b> listed below to <b>invoke the desired chatbot skill</b>:",
+    "content": [
+      {
+        "title": "Customer Relationship Skills",
+        "items": [
+          {
+            "title": "'Send content'",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Businesses</li><li>Description: Sends different types of content (messages, images, videos) to your existing customer-base</li><li>Other utterances:<br>'Send a message' (or image / video)<br> 'Send a message (or image/video) with feedback' </li></ul>"
+          },
+          {
+            "title": "'Share feedback'",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Customers</li></ul>"
+          },
+          {
+            "title": "'Suggest improvements' (or ideas)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>WHO (invoked by): Customers</li></ul>"
+          },
+          {
+            "title": "'List products' (or services)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Everyone (businesses and customers)</li></ul>"
+          },
+          {
+            "title": "'Add a product' (or service)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Businesses</li></ul>"
+          }
+        ]
+      },
+      {
+        "title": "Business skills",
+        "items": [
+          {
+            "title": "'Define a business target'",
+            "content": ""
+          },
+          {
+            "title": "'Rate a target'",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "title": "Light (fun) skills",
+        "items": [
+          {
+            "title": "'Tell me a joke'",
+            "content": ""
+          },
+          {
+            "title": "'Share an inspirational quote'",
+            "content": ""
+          },
+          {
+            "title": "'Tell me about <topic name>'",
+            "content": ""
+          },
+          {
+            "title": "'Get weather for <location>'",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+}
