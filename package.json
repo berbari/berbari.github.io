@@ -21,14 +21,14 @@
     "gulp-notify": "latest",
     "gulp-pug": "latest",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "latest",
+    "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-svg-sprite": "latest",
     "gulp-uglify": "latest",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.0",
     "rimraf": "latest",
-    "yargs": "^10.0.3"
+    "yargs": "^14.2.0"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7"

@@ -139,6 +139,7 @@
           }
         ],
         "faq.pug": {
+          "outputFilename": "faq.html",
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",
@@ -196,6 +197,7 @@
           ]
         },
         "privacy-policy.pug": {
+          "outputFilename": "privacy.html",
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",

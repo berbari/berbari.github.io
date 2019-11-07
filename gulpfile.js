@@ -18,12 +18,11 @@ let gulp = require('gulp'),
   jsonMap = json.templates.map(function (clientObj) {
     return clientObj;
   });
-
   //
 
   var defaultTasksList = [];
   defaultTasksList.push('clean'); // always clean build directory
-
+  
 jsonMap.forEach(function (tpl) {
   let jsF = require(config.srcDir + tpl.template + '/js/foundation/js.foundation.js');
 
@@ -54,7 +53,7 @@ jsonMap.forEach(function (tpl) {
 
   // Create path to inputFile
   let pugFiles = tpl.inputFiles.map(function (el) {
-    return config.srcDir + tpl.template + '/layout/instances/' + el
+    return config.srcDir + tpl.template + '/pug/views/' + el
   });
 
   gulp.task(tpl.template + tpl.client + '-pug', function () {
@@ -65,7 +64,7 @@ jsonMap.forEach(function (tpl) {
           // read instance configuration
           let json = JSON.parse(fs.readFileSync(file.path));
 
-          gulp.src(config.srcDir + json.template + '/layout/instances/' + json.templateFile)
+          gulp.src(config.srcDir + json.template + '/pug/views/' + json.templateFile)
               // add data to render a pug template
             .pipe(
               gp.pug(
@@ -89,7 +88,7 @@ jsonMap.forEach(function (tpl) {
           return file;
         })
       )
-      .pipe(gulp.dest('./temp'))
+      // .pipe(gulp.dest('./temp'))
   });
 
 
@@ -155,7 +154,7 @@ gulp.task(argv.template + '-js:process', function () {
     .pipe(gulp.dest(config.root + argv.template + '/assets/js'))
 });
 gulp.task(argv.template + '-pug', function () {
-  return gulp.src(config.srcDir + argv.template + '/layout/instances/*.pug')
+  return gulp.src(config.srcDir + argv.template + '/pug/views/*.pug')
     .pipe(gp.pug(config.pugConfig))
     .on('error', gp.notify.onError(function (error) {
       return {
@@ -203,10 +202,10 @@ gulp.task('serve', function () {
 gulp.task('watch', function () {
   gulp.watch(config.srcDir + argv.template + '/js/*.js', gulp.series(argv.template + '-js:process'));
   gulp.watch(config.srcDir + argv.template + '/style/**/*.scss', gulp.series(argv.template + '-sass'));
-  gulp.watch(config.srcDir + argv.template + '/layout/components/*.pug', gulp.series(argv.template + '-pug'));
-  gulp.watch(config.srcDir + argv.template + '/layout/helpers/*.pug', gulp.series(argv.template + '-pug'));
-  gulp.watch(config.srcDir + argv.template + '/layout/instances/*.pug', gulp.series(argv.template + '-pug'));
-  gulp.watch(config.srcDir + argv.template + '/layout/_template.pug', gulp.series(argv.template + '-pug'));
+  gulp.watch(config.srcDir + argv.template + '/pug/components/*.pug', gulp.series(argv.template + '-pug'));
+  gulp.watch(config.srcDir + argv.template + '/pug/helpers/*.pug', gulp.series(argv.template + '-pug'));
+  gulp.watch(config.srcDir + argv.template + '/pug/views/*.pug', gulp.series(argv.template + '-pug'));
+  gulp.watch(config.srcDir + argv.template + '/pug/_template.pug', gulp.series(argv.template + '-pug'));
   gulp.watch(config.srcDir + argv.template + '/images/**/*.*', gulp.series(argv.template + '-copy:image'));
   gulp.watch(config.srcDir + argv.template + '/fonts/**/*.*', gulp.series(argv.template + '-copy:fonts'));
   gulp.watch(config.srcDir + argv.template + '/icons/*.*', gulp.series(argv.template + '-svgSprite'));
