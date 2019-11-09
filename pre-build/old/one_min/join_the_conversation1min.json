@@ -1,0 +1,140 @@
+{
+  "client": "EYT",
+  "template": "1min_me",
+  "templateFile": "faq.pug",
+  "outputFilename": "conversation.html",
+  "templateData": {
+    "title": "1-minute-me: business chatbot",
+    "meta": {
+      "title": "1min.me: chatbot for your business.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
+      "keywords": "chatbot, leadership, skills"
+    },
+    "contacts": {
+      "phone": "+1-800-799-2456",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2019 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.7255,
+      "longitude": -79.4032,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "3080 Yonge St Suite 6060 <br>Toronto, ON, M4N 3N1"
+    },
+    "assets": {
+      "logo": "assets/img/one_min_me_logo_1050_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#000000",
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1min.me",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "/bot/",
+        "text": "Connect on the web"
+      }
+    ],
+    "disclaimer": "Initiate conversations. With <b>customers</b> and <b>colleagues</b>. Using an <b>intuitive chat</b> platform.<br><br>Structured conversations lead to effective engagement - with your customers and colleagues. Isn't that what drives better business <b>results</b>?<br><br>Share ideas. Gauge interest. Book appointments. Transact. Optimize collaboration. Make work more fun. The list goes on... <a href=\"mailto:info@execyoution.com\">Contact us</a> to see how we enable solutions for your specific business needs.",
+    "content": [
+      {
+        "title": "Conversations about 'ideas'",
+        "items": [
+          {
+            "title": "Share <b>customer-relevant</b> (video) content.",
+            "content": "Every month, exec.<font color=\"red\">YOU</font>.tion will custom-produce at least one video for each of our customers to be the <b>catalyst for a specific conversation</b> of interest to your business and your customers.  Build enduring relationships and convert customers to brand advocates. "
+          },
+          {
+            "title": "Gage Interest in new products / services ideas.",
+            "content": "You have an idea for a new product? What do your customers or colleagues think about it? Find out in real-time. Get actionable charts."
+          },
+          {
+            "title": "Encourage unsolicited feedback.",
+            "content": "How engaged are your customers? Beyond product feedback, why not use your chat platform to encourage unsolicited feedback on how to improve customer service, what your customers like and don’t like about your brand, how they feel about competitors, etc. exec.YOU.tion will compile customer feedback into actionable reports."
+          }
+        ]
+      },
+      {
+        "title": "'Transactional' conversations",
+        "items": [
+          {
+            "title": "Buy / sell your products and services.",
+            "content": "Offer your customers the convenience to order (buy) your products or services from the convenience of their favorite chat app. A one-stop-shop for interacting with customers."
+          },
+          {
+            "title": "Book appointments.",
+            "content": "Streamline the way you handle your customers’ appointments: let them make, modify or cancel appointments intuitively in the chat window. They could request automatic reminders too."
+          },
+          {
+            "title": "Send personalized offers.",
+            "content": "Send customized offers to one, several or all of your customers. They could avail them with one click or even share them with a friend."
+          }
+        ]
+      },
+      {
+        "title": "Leadership conversations",
+        "items": [
+          {
+            "title": "Build a fit-for-purpose company culture.",
+            "content": "You might not want to flatten your company’s hierarchy. But you can still make everyone feel valued. Empower the sharing of ideas that shape corporate culture (encourage the participation of everyone). Celebrate successes."
+          },
+          {
+            "title": "Onboard new hires.",
+            "content": "Make onboarding new recruits a conversation in which those new colleagues learn about your company culture, but also contribute to it while they are still  enthusiastic about joining your team. New blood always brings new perspective. Make the most out of that."
+          },
+          {
+            "title": "Rate performance. Collectively.",
+            "content": "How mature is your corporate culture? What if you democratize performance management by encouraging anyone in the organization to rate anyone else’s work (in identified or anonymous fashion). Irrespective of hierarchy."
+          }
+        ]
+      },
+      {
+        "title": "Strategy &amp; execution",
+        "items": [
+          {
+            "title": "Collaborate on business targets.",
+            "content": ""
+          },
+          {
+            "title": "Rate Progress.",
+            "content": ""
+          },
+          {
+            "title": "Track results.",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+}

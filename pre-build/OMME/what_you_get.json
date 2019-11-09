@@ -1,0 +1,75 @@
+{
+  "client": "OMME",
+  "template": "template1",
+  "templateFile": "index_no_buttons.pug",
+  "outputFilename": "what_you_get.html",
+  "templateData": {
+    "outputFilename": "index.html",
+    "title": "1-minute-me: business chatbot",
+    "meta": {
+      "title": "1min.me: chatbot for your business.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
+      "keywords": "chatbot, leadership, skills"
+    },
+    "contacts": {
+      "phone": "+1-800-799-2456",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2019 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.7255,
+      "longitude": -79.4032,
+      "zoom": 16,
+      "company": "exec.YOU.tion Inc.",
+      "location": "3080 Yonge St Suite 6060 <br>Toronto, ON, M4N 3N1"
+    },
+    "assets": {
+      "logo": "assets/img/one_min_me_logo_1050_233.png",
+      "backgroundVideo": "https://s3.amazonaws.com/pod.1min.me/videos/eyt+BG+01_720.mp4",
+      "embedVideo": "https://player.vimeo.com/video/278702107"
+    },
+    "texts": {
+      "line1": "5 Services offered",
+      "line2": "as one solution",
+      "line3_word1": "for customer",
+      "line3_word2": "engagement.",
+      "icon_class1": "fa fa-circle-thin",
+      "icon_class2": "fa fa-play-circle"
+    },
+    "links": {
+      "web_url": "/bot/",
+      "messenger_url": "//messenger.com/t/1min.me"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "/bot/",
+        "text": "<font color=\"red\">Sign up / Login</font>"
+      },
+      {
+        "href": "//messenger.com/t/1min.me?ref=OMME",
+        "text": "<font color=\"#0084FF\">Connect on FB Messenger</font>"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      }
+    ]
+  }
+}

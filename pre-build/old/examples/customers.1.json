@@ -1,0 +1,109 @@
+{
+  "client": "EYT",
+  "template": "template1",
+  "templateFile": "faq.pug",
+  "outputFilename": "customers.html",
+  "templateData": {
+    "title": "execYOUtion",
+    "meta": {
+      "title": "execYOUtion - better execution driven by you",
+      "description": "Engage your customers/",
+      "keywords": "chatbot, customers, customer, marketing, selling"
+    },
+    "contacts": {
+      "phone": "+1-800-799-2456",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2018 execYOUtion. All rights reserved.",
+      "url": "http://www.execyoution.com"
+    },
+    "address": {
+      "latitude": 43.6473,
+      "longitude": -79.397,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#ffffff",
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href": "faq2.html",
+        "text": "Customers"
+      },
+      {
+        "href": "index1.html",
+        "text": "Colleagues"
+      },
+      {
+        "href": "google.com",
+        "text": "google dot com"
+      },
+      {
+        "href": "//google.com",
+        "text": "double slash google"
+      },
+      {
+        "href": "https://www.google.com",
+        "text": "full google url"
+      },
+      {
+        "href": "tel:+15555551212",
+        "text": "Call Us"
+      }
+    ],
+    "disclaimer": "Most of us love chatting. What if we could use a chat platform as a way to execute better?. 1-min-me is a chatbot (chat platform) that lets you engage with customers and colleagues with the objective of delivering better results.",
+    "content": [
+      {
+        "title": "Block 1",
+        "items": [
+          {
+            "title": "Item 1<b> Bold text</b>",
+            "content": "Items 1 content <b> Bold text</b>"
+          },
+          {
+            "title": "Item 2",
+            "content": "Items 2 content <ol><li>List item 1</li><li>List item 2</li></ol><br/><img src=\"http://cdn3-www.dogtime.com/assets/uploads/gallery/pug-dog-breed-pictures/3-sidesitting.jpg\"/>"
+          },
+          {
+            "title": "Item 3",
+            "content": "Items 3 content"
+          }
+        ]
+      },
+      {
+        "title": "Block 2",
+        "items": [
+          {
+            "title": "Item 4",
+            "content": "Items 4 content"
+          },
+          {
+            "title": "Item 5",
+            "content": "Items 5 content"
+          }
+        ]
+      },
+      {
+        "title": "Block 3",
+        "items": [
+          {
+            "title": "Item 6",
+            "content": "Items 6 content"
+          }
+        ]
+      }
+    ]
+  }
+}

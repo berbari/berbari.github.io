@@ -4,18 +4,20 @@
       "client": "Google",
       "template": "template1",
       "inputFiles": [
-        "index.pug", "faq.pug", "privacy-policy.pug"
+        "index.pug",
+        "faq.pug",
+        "privacy-policy.pug"
       ],
       "data": {
         "index.pug": {
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",
-            "description":  "Google template description",
+            "description": "Google template description",
             "keywords": "templates, generation, variables"
           },
           "contacts": {
-            "phone": "+16475298530",
+            "phone": "+1-800-799-2456",
             "email": "info@execyoution.com"
           },
           "copyright": {
@@ -49,28 +51,28 @@
           },
           "navlinks": [
             {
-              "href":"#!",
-              "text":"customers"
+              "href": "#!",
+              "text": "customers"
             },
             {
-              "href":"#!",
-              "text":"colleagues"
+              "href": "#!",
+              "text": "colleagues"
             },
             {
-              "href":"#!",
-              "text":"suppliers"
+              "href": "#!",
+              "text": "suppliers"
             },
             {
-              "href":"#!",
-              "text":"get started"
+              "href": "#!",
+              "text": "get started"
             },
             {
-              "href":"#!",
-              "text":"connect on web"
+              "href": "#!",
+              "text": "connect on web"
             },
             {
-              "href":"#!",
-              "text":"connect on messenger"
+              "href": "#!",
+              "text": "connect on messenger"
             }
           ]
         },
@@ -78,11 +80,11 @@
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",
-            "description":  "Google template description",
+            "description": "Google template description",
             "keywords": "templates, generation, variables"
           },
           "contacts": {
-            "phone": "+16475298530",
+            "phone": "+1-800-799-2456",
             "email": "info@execyoution.com"
           },
           "copyright": {
@@ -116,28 +118,28 @@
           },
           "navlinks": [
             {
-              "href":"#!",
-              "text":"customers"
+              "href": "#!",
+              "text": "customers"
             },
             {
-              "href":"#!",
-              "text":"colleagues"
+              "href": "#!",
+              "text": "colleagues"
             },
             {
-              "href":"#!",
-              "text":"suppliers"
+              "href": "#!",
+              "text": "suppliers"
             },
             {
-              "href":"#!",
-              "text":"get started"
+              "href": "#!",
+              "text": "get started"
             },
             {
-              "href":"#!",
-              "text":"connect on web"
+              "href": "#!",
+              "text": "connect on web"
             },
             {
-              "href":"#!",
-              "text":"connect on messenger"
+              "href": "#!",
+              "text": "connect on messenger"
             }
           ]
         },
@@ -145,11 +147,11 @@
           "title": "execYOUtion",
           "meta": {
             "title": "execYOUtion - better execution driven by you",
-            "description":  "Google template description",
+            "description": "Google template description",
             "keywords": "templates, generation, variables"
           },
           "contacts": {
-            "phone": "+16475298530",
+            "phone": "+1-800-799-2456",
             "email": "info@execyoution.com"
           },
           "copyright": {
@@ -183,28 +185,28 @@
           },
           "navlinks": [
             {
-              "href":"#!",
-              "text":"customers"
+              "href": "#!",
+              "text": "customers"
             },
             {
-              "href":"#!",
-              "text":"colleagues"
+              "href": "#!",
+              "text": "colleagues"
             },
             {
-              "href":"#!",
-              "text":"suppliers"
+              "href": "#!",
+              "text": "suppliers"
             },
             {
-              "href":"#!",
-              "text":"get started"
+              "href": "#!",
+              "text": "get started"
             },
             {
-              "href":"#!",
-              "text":"connect on web"
+              "href": "#!",
+              "text": "connect on web"
             },
             {
-              "href":"#!",
-              "text":"connect on messenger"
+              "href": "#!",
+              "text": "connect on messenger"
             }
           ]
         }
@@ -220,11 +222,11 @@
         "title": "execYOUtion",
         "meta": {
           "title": "execYOUtion - better execution driven by you",
-          "description":  "Google template description",
+          "description": "Google template description",
           "keywords": "templates, generation, variables"
         },
         "contacts": {
-          "phone": "+16475298530",
+          "phone": "+1-800-799-2456",
           "email": "info@execyoution.com"
         },
         "copyright": {
@@ -258,28 +260,28 @@
         },
         "navlinks": [
           {
-            "href":"#!",
-            "text":"customers"
+            "href": "#!",
+            "text": "customers"
           },
           {
-            "href":"#!",
-            "text":"colleagues"
+            "href": "#!",
+            "text": "colleagues"
           },
           {
-            "href":"#!",
-            "text":"suppliers"
+            "href": "#!",
+            "text": "suppliers"
           },
           {
-            "href":"#!",
-            "text":"get started"
+            "href": "#!",
+            "text": "get started"
           },
           {
-            "href":"#!",
-            "text":"connect on web"
+            "href": "#!",
+            "text": "connect on web"
           },
           {
-            "href":"#!",
-            "text":"connect on messenger"
+            "href": "#!",
+            "text": "connect on messenger"
           }
         ]
       }
@@ -292,11 +294,11 @@
       ],
       "data": {
         "meta": {
-          "description":  "Google template description",
+          "description": "Google template description",
           "keywords": "templates, generation, variables"
         },
         "contacts": {
-          "phone": "+16475298530",
+          "phone": "+1-800-799-2456",
           "email": "info@execyoution.com",
           "text": "Copyright © 2018 execYOUtion. All rights reserved."
         },

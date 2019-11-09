@@ -1,0 +1,131 @@
+{
+  "client": "EYT",
+  "template": "template1",
+  "templateFile": "faq.pug",
+  "outputFilename": "skills.html",
+  "templateData": {
+    "title": "execYOUtion",
+    "meta": {
+      "title": "execYOUtion: better execution driven by YOU.",
+      "description": "Chatbot skills",
+      "keywords": "templates, generation, variables"
+    },
+    "contacts": {
+      "phone": "+1-800-799-2456",
+      "email": "info@execyoution.com"
+    },
+    "copyright": {
+      "text": "© 2018 execYOUtion.",
+      "url": "https://www.execyoution.com",
+      "privacy": "privacy-policy.html",
+      "tos": "terms-of-service.html"
+    },
+    "address": {
+      "latitude": 43.6473,
+      "longitude": -79.397,
+      "zoom": 16,
+      "company": "execYOUtion Inc.",
+      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
+    },
+    "assets": {
+      "logo": "assets/img/eyt_logo_1200_233.png"
+    },
+    "styles": {
+      "alert_text_color": "#000000",
+      "alert_color": "#ffeecb",
+      "alert_border_color": "#ffeecb"
+    },
+    "links": {
+      "web_url": "#!",
+      "messenger_url": "#!"
+    },
+    "navlinks": [
+      {
+        "href": "what_you_get.html",
+        "text": "what <font color=\"red\">YOU</font> get"
+      },
+      {
+        "href": "conversation.html",
+        "text": "Join The Conversation"
+      },
+      {
+        "href": "skills.html",
+        "text": "Chatbot Skills"
+      },
+      {
+        "href": "tel:+18007992456",
+        "text": "Call us: 800-799-2456"
+      },
+      {
+        "href": "//messenger.com/t/1982976945061466",
+        "text": "Connect on Messenger"
+      },
+      {
+        "href": "//chat.1min.me",
+        "text": "Connect on the web"
+      }
+    ],
+    "disclaimer": "This page will be constantly updated to feature the growing list of chatbot skills on the 1-minute-me chat platform.<br><br>To invoke any skill, just type (or say) the utterance listed below:",
+    "content": [
+      {
+        "title": "Customer Relationship Skills",
+        "items": [
+          {
+            "title": "'Send content'",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Businesses</li><li>Description: Sends different types of content (messages, images, videos) to your existing customer-base</li><li>Other utterances:<br>'Send a message' (or image / video)<br> 'Send a message (or image/video) with feedback' </li></ul>"
+          },
+          {
+            "title": "'Share feedback'",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Customers</li></ul>"
+          },
+          {
+            "title": "'Suggest improvements' (or ideas)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>WHO (invoked by): Customers</li></ul>"
+          },
+          {
+            "title": "'List products' (or services)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Everyone (businesses and customers)</li></ul>"
+          },
+          {
+            "title": "'Add a product' (or service)",
+            "content": "<ul style=\"list-style-type: disc; padding-left: 30px;\"><li>Invoked by: Businesses</li></ul>"
+          }
+        ]
+      },
+      {
+        "title": "Business skills",
+        "items": [
+          {
+            "title": "'Define a business target'",
+            "content": ""
+          },
+          {
+            "title": "'Rate a target'",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "title": "Light (fun) skills",
+        "items": [
+          {
+            "title": "'Tell me a joke'",
+            "content": ""
+          },
+          {
+            "title": "'Share an inspirational quote'",
+            "content": ""
+          },
+          {
+            "title": "'Tell me about <topic name>'",
+            "content": ""
+          },
+          {
+            "title": "'Get weather for <location>'",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+}
