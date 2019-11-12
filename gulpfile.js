@@ -98,7 +98,7 @@ jsonMap.forEach(function (tpl) {
       .pipe(gp.sassGlob())
       .pipe(gp.sourcemaps.init())
       .pipe(gp.sass()).on('error', gp.notify.onError({title: 'Style'}))
-      .pipe(gp.autoprefixer({browsers: config.autoprefixerConfig}))
+      .pipe(gp.autoprefixer({overrideBrowserslist: config.autoprefixerConfig}))
       .pipe(gp.csso())
       .pipe(gp.sourcemaps.write())
       .pipe(gulp.dest(config.root + tpl.client + '/' + tpl.template + '/assets/css'))
@@ -190,22 +190,14 @@ gulp.task(argv.template + '-svgSprite', function () {
 });
 gulp.task('serve', function () {
 
-  browserSync(
-    {
+  browserSync({
       notify: false,
       port: 3000,
       server: {
         baseDir: config.root + argv.template,
         directory: true
-      },
-    }
-  );
-  /*.init({
-   open: false,
-   server: config.root
-   })*/
-  ;
-
+      }
+    });
   browserSync.watch([config.root + argv.template + '/**/*.*', '!**/*.css'], browserSync.reload);
 });
 gulp.task('watch', function () {

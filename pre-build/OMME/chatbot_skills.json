@@ -1,34 +1,34 @@
 {
-  "client": "EYT",
+  "client": "OMME",
   "template": "template1",
   "templateFile": "faq.pug",
   "outputFilename": "skills.html",
   "templateData": {
-    "title": "execYOUtion",
+    "title": "1-minute-me: business chatbot",
     "meta": {
-      "title": "execYOUtion: better execution driven by YOU.",
-      "description": "Chatbot skills",
-      "keywords": "templates, generation, variables"
+      "title": "1min.me: chatbot for your business.",
+      "description": "business conversational platform (chatbot) that helps you deliver business results in an engaging and fun manner.",
+      "keywords": "chatbot, leadership, skills"
     },
     "contacts": {
-      "phone": "+16475298530",
+      "phone": "+1-800-799-2456",
       "email": "info@execyoution.com"
     },
     "copyright": {
-      "text": "© 2018 execYOUtion.",
+      "text": "© 2019 execYOUtion.",
       "url": "https://www.execyoution.com",
       "privacy": "privacy-policy.html",
       "tos": "terms-of-service.html"
     },
     "address": {
-      "latitude": 43.6473,
-      "longitude": -79.397,
+      "latitude": 43.7255,
+      "longitude": -79.4032,
       "zoom": 16,
       "company": "execYOUtion Inc.",
-      "location": "20 Camden Street Unit 200 <br/>Toronto, ON, M5V 1V1"
+      "location": "3080 Yonge St Suite 6060 <br>Toronto, ON, M4N 3N1"
     },
     "assets": {
-      "logo": "assets/img/eyt_logo_1200_233.png"
+      "logo": "assets/img/one_min_me_logo_1050_233.png"
     },
     "styles": {
       "alert_text_color": "#000000",
@@ -49,23 +49,23 @@
         "text": "Join The Conversation"
       },
       {
+        "href": "/bot/",
+        "text": "<font color=\"red\">Sign up / Login</font>"
+      },
+      {
+        "href": "//messenger.com/t/1min.me?ref=OMME",
+        "text": "<font color=\"#0084FF\">Connect on FB Messenger</font>"
+      },
+      {
         "href": "skills.html",
         "text": "Chatbot Skills"
       },
       {
         "href": "tel:+18007992456",
         "text": "Call us: 800-799-2456"
-      },
-      {
-        "href": "//messenger.com/t/1982976945061466",
-        "text": "Connect on Messenger"
-      },
-      {
-        "href": "//chat.1min.me",
-        "text": "Connect on the web"
       }
     ],
-    "disclaimer": "This page will be constantly updated to feature the growing list of chatbot skills on the 1-minute-me chat platform.<br><br>To invoke any skill, just type (or say) the utterance listed below:",
+    "disclaimer": "This page will be constantly updated to feature the growing list of chatbot skills on the 1-minute-me chat platform.<br><br>To invoke any skill, just type (or say) the <b>utterance</b> listed below to <b>invoke the desired chatbot skill</b>:",
     "content": [
       {
         "title": "Customer Relationship Skills",
