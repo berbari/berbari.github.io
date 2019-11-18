@@ -10,7 +10,7 @@ html_tag = r'<script data-widget-url="/wbot/index.html" src="/wbot/embed.js" def
 
 
 base_dir = "C:\\Users\\Bassem\\Desktop\\working folder\\Tech\\static_site\\berbari.github.io\\build"
-sub_dir = "eyt"  # "OMME"
+sub_dir = "TESTCO"  # "OMME"
 template_folder = "template1"
 
 dir_path = f"{base_dir}\\{sub_dir}\\{template_folder}"

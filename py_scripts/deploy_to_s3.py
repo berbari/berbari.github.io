@@ -2,6 +2,8 @@ import boto3
 
 s3 = boto3.resource("s3")
 
+
+# Step 1: get bucket to update
 list_of_buckets = ["www.execyoution.com", "www.1min.me"]
 input_message = "what's the name of the bucket?\n"
 input_message += "Alternatively, pick from below list (by number):\n"
