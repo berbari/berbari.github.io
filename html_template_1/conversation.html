@@ -32,19 +32,50 @@
                     <a class="header__logo" href="/">
                         <img src="assets/img/eyt_logo_1200_233.png" alt="execyoution" />
                     </a>
+                    <!-- ====== Start: Main nav  ===== -->
+                    <!-- mobile navbar toggle -->
                     <button class="header__navbar--toggle navbar-toggle" type="button">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- main nav items -->
                     <ul class="header__navbar--nav nav navbar-nav navbar-right">
+                        <!-- all 'li' tags will goes here including "mobile-only", "desktop-only", "in-hamburger-nav" -->
+                        <!-- 'li' can have "mobile-only","desktop-only","in-hamburger-nav","in-hamburger-nav desktop-only" classes -->
+                        <!-- there should be less than 5 'li' tags without "in-hamburger-nav" or "mobile-only" classes -->
                         <li><a href="what_you_get.html"><span>what <font color="red">YOU</font> get</span></a></li>
-                        <li><a href="conversation.html"><span>Join The Conversation</span></a></li>
+                        <li class="mobile-only"><a href="/"><span>Mobile Only</span></a></li>
+                        <li class="in-hamburger-nav"><a href="/"><span>In Humburger</span></a></li>
+                        <li><a href="conversation.html"><span> Conversation</span></a></li>
                         <li><a href="skills.html"><span>Chatbot Skills</span></a></li>
-                        <li><a href="tel:+18007992456"><span>Call us: 800-799-2456</span></a></li>
-                        <li><a href="//messenger.com/t/1982976945061466"><span>Connect on Messenger</span></a></li>
-                        <li><a href="//chat.1min.me"><span>Connect on the web</span></a></li>
+                        <li class="desktop-only"><a href="/"><span>Desktop Only</span></a></li>
+                        <li class="in-hamburger-nav"><a href="tel:+18007992456"><span>Call us: 800-799-2456</span></a></li>
+                        <li class="in-hamburger-nav desktop-only"><a href="/"><span>Humburger & Desktop Only</span></a></li>
+                        <li class="in-hamburger-nav"><a href="//messenger.com/t/1982976945061466"><span>Connect on Messenger</span></a></li>
+                        <li class="in-hamburger-nav"><a href="//chat.1min.me"><span>Connect on the web</span></a></li>
                     </ul>
+                    <!-- ====== End: Main nav  ===== -->
+
+                    <!-- ====== Start: Desktop humburger nav  ===== -->
+                    <!-- desktop navbar toggle -->
+                    <button class="hamburger-toggle navbar-toggle" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- desktop humburger nav items -->
+                    <ul class="humbarger--nav nav navbar-nav navbar-right">
+                        <!-- 'li' tags that contains "in-hamburger-nav" should duplicate here -->
+                        <!-- either we can keep classes of 'li' or remove them, will not effect here -->
+                        <!-- if there is no 'li' in this list then desktop hamburger-toggle will be hidden  -->
+                        <li class="in-hamburger-nav"><a href="/"><span>In Humburger</span></a></li>
+                        <li class="in-hamburger-nav"><a href="tel:+18007992456"><span>Call us: 800-799-2456</span></a></li>
+                        <li class="in-hamburger-nav desktop-only"><a href="/"><span>Humburger & Desktop Only</span></a></li>
+                        <li class="in-hamburger-nav"><a href="//messenger.com/t/1982976945061466"><span>Connect on Messenger</span></a></li>
+                        <li class="in-hamburger-nav"><a href="//chat.1min.me"><span>Connect on the web</span></a></li>
+                    </ul>
+                    <!-- ===== End: Desktop humburger nav =====  -->
                 </div>
             </div>
         </header>

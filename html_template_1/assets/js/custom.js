@@ -5,11 +5,19 @@ $(document).ready(function () {
       $('body').removeClass('open-nav');
     }
   });
-  $('.navbar-toggle').click( function() {
+  $('.header__navbar--toggle').click( function() {
 
     $(this).parents('body').toggleClass('open-nav');
   });
+  $('.hamburger-toggle').click( function() {
 
+    $(this).parents('body').toggleClass('open-nav');
+  });
+  /* desktop humburger toggle will be hidden if .humbarger--nav has no li tags*/
+  if (!($('.humbarger--nav').find('li').length) ){
+    $('.hamburger-toggle').css("display", "none");
+    console.log(length, "g");
+  }
   $('.video-play').click(function () {
     $('.popup-video').fadeIn();
   });
