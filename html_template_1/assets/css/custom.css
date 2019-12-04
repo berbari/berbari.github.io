@@ -285,7 +285,7 @@ body {
   }
 
   /* Desktop hambarger navbar */
-  .humbarger--nav {
+  .hamburger--nav {
     float: right;
     font-family: 'Open Sans';
     margin: 0;
@@ -294,52 +294,52 @@ body {
     font-weight: 400;
     padding: 0;
   }
-  .humbarger--nav > li:first-child a span {
+  .hamburger--nav > li:first-child a span {
     border-left: 0;
   }
-  .humbarger--nav > li a {
+  .hamburger--nav > li a {
     display: block;
     border-bottom: 7px solid transparent;
     text-transform: uppercase;
     padding: 46px 0 12px;
   }
-  .humbarger--nav > li a span {
+  .hamburger--nav > li a span {
     padding: 5px 12px;
     border-left: 1px dotted #e1e1e1;
   }
   /* @media (max-width: 991px) {
-    .humbarger--nav > li a span {
+    .hamburger--nav > li a span {
       padding: 5px;
     }
   } */
   @media (min-width: 768px) {
-    .humbarger--nav > li a span {
+    .hamburger--nav > li a span {
       border: none;
       padding: 0;
     }
   }
-  .humbarger--nav > li a:hover,
-  .humbarger--nav > li a:focus {
+  .hamburger--nav > li a:hover,
+  .hamburger--nav > li a:focus {
     background: #f7f7f7;
     border-color: #e1e1e1;
     color: #23527c;
   }
-  .humbarger--nav > li:last-child a span {
+  .hamburger--nav > li:last-child a span {
     border: none;
   }
   @media (min-width: 768px) {
-    .humbarger--nav > li {
+    .hamburger--nav > li {
       border-bottom: 1px dotted #e1e1e1;
       width: 100%;
       clear: both;
     }
-    .humbarger--nav > li a {
+    .hamburger--nav > li a {
       padding: 10px 20px 7px;
       border-bottom: 3px solid transparent;
     }
   }
   @media (min-width: 768px) {
-    .humbarger--nav {
+    .hamburger--nav {
       padding-top: 60px;
       width: 260px;
       height: 100%;
@@ -355,11 +355,11 @@ body {
     }
   }
   @media (max-width: 767px) {
-    .humbarger--nav {
+    .hamburger--nav {
       display: none;
     }
   }
-  .open-nav .humbarger--nav {
+  .open-nav .hamburger--nav {
     right: 0;
   }
   .hamburger-toggle {
@@ -376,7 +376,7 @@ body {
     .hamburger-toggle {
       top: 40px;
     }
-    .humbarger--nav{
+    .hamburger--nav{
       padding-top: 75px;
     }
   }

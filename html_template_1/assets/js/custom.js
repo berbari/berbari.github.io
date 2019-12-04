@@ -13,8 +13,8 @@ $(document).ready(function () {
 
     $(this).parents('body').toggleClass('open-nav');
   });
-  /* desktop humburger toggle will be hidden if .humbarger--nav has no li tags*/
-  if (!($('.humbarger--nav').find('li').length) ){
+  /* desktop hamburger toggle will be hidden if .hamburger--nav has no li tags*/
+  if (!($('.hamburger--nav').find('li').length) ){
     $('.hamburger-toggle').css("display", "none");
     console.log(length, "g");
   }
