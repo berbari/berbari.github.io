@@ -41,11 +41,15 @@ $(document).ready(function () {
     if (document.getElementsByClassName('lightbox')[0].visible) {
       document.getElementsByClassName('lightbox')[0].classList.remove('lightbox-visible');
       document.getElementsByClassName('popup')[0].classList.remove('popup-visible');
+      document.getElementsByClassName('lightbox')[0].classList.add('lightbox-hidden');
+      document.getElementsByClassName('popup')[0].classList.add('popup-hidden');
 
       document.getElementsByClassName('lightbox')[0].visible = false;
     } else {
       document.getElementsByClassName('lightbox')[0].classList.add('lightbox-visible');
       document.getElementsByClassName('popup')[0].classList.add('popup-visible');
+      document.getElementsByClassName('lightbox')[0].classList.remove('lightbox-hidden');
+      document.getElementsByClassName('popup')[0].classList.remove('popup-hidden');
 
       document.getElementsByClassName('lightbox')[0].visible = true;
     }

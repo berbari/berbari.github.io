@@ -510,9 +510,8 @@ body {
   .lightbox,
   .popup {
     opacity: 0;
-    transition: all 0.5s ease;
   }
-  
+
   .lightbox {
     position: fixed;
     visibility: hidden;
@@ -531,7 +530,7 @@ body {
     width: 60%;
     height: 60%;
     border-radius: 5px;
-    background-color: #ee2024;
+    /* background-color: #ee2024; */
   }
   @media screen and (max-width: 480px) {
     .popup {
@@ -557,6 +556,12 @@ body {
   .lightbox-visible {
     visibility: visible;
     opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .popup-hidden,
+  .lightbox-hidden {
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.5s ease;
   }
   
